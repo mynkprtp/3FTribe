@@ -1,0 +1,71 @@
+.thought{
+    width: 600px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 48px;
+    padding: 40px;
+    /* padding-top:0; */
+    text-align: center;
+}
+
+.guide-msg{
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.section-cover{
+    max-height: 550px;
+    overflow: hidden;
+}
+
+.section-cover img{
+    width: 100%;
+    object-position:center;
+}
+
+.section-work{
+    /* padding: 60px; */
+}
+
+.section-work-title{
+    font-family: 'Open Sans Condensed', sans-serif;
+    padding:  60px; 
+    font-size: 54px;
+    /* border: 1px solid ; */
+}
+.row{
+    padding: 0px;
+    margin: 0;
+}
+.card-body{
+    width: 400px;
+    /* height: 500px; */
+    border: 1px solid rgb(155, 161, 157);
+    border-radius: 10px;
+    margin: 40px;
+    position: relative;
+    box-shadow: 0 0 20px rgb(85, 90, 86);
+    /* margin: 0 5px; */
+    transition: all .5s ease-out; 
+}
+.card-body:hover { 
+    z-index: 1;
+    /* color: aliceblue;
+    background-color: rgba(17, 43, 19, 0.9); */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(19, 18, 18);
+    transform: scale(1.03); 
+}
+.card-heading{
+    font-family: 'Unica One', cursive;
+    font-size: 32px;
+    font-weight: 700;
+    padding: 20px 5px;
+
+}
+.card-content{
+    font-size: 16px;
+    padding: 30px;
+}
+/* .card:hover{
+    flex-grow: 1.2;
+} */
