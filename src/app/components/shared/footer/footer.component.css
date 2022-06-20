@@ -1,3 +1,61 @@
 .footer-section{
-    padding: 40px;
+    background-color: rgb(54, 59, 63);
+    padding: 40px 40px 15px 40px;
+    color: #fff;
+}
+.footer-section .subs{
+    text-align: center;
+    width: 480px;
+    margin: 80px;
+    margin-bottom: 15px;
+}
+.footer-section h3{
+    font-size: 50px;
+    font-weight: 580;
+}
+.footer-section input{
+    width: 320px;
+    color: #fff;
+    margin: 0px 12px;
+    font-size: 16px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom:1px solid #fff;
+}
+.footer-section input::placeholder{
+    color: #fff;
+}
+.footer-section button{
+    width: 140px;
+    height: 50px;
+    margin-right: 20px;
+    padding: 10px 23px;
+    font-size: 14px !important;
+    background: #fff;
+}
+.btn-light:hover{
+    box-shadow: 0 15px 20px 0px rgb(139, 138, 138);
+}
+.footer-section .link-section{
+    margin: 120px 60px 0 60px;
+}
+.footer-section h4{
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.footer-section ul{
+    list-style: none;
+}
+.footer-section li{
+    padding: 10px 0;
+    font-size: 13px;
+}
+.footer-section h5{
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 16px;
+    text-align: center;
 }

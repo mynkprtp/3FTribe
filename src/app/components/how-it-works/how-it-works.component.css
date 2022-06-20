@@ -1,0 +1,26 @@
+.section-how{
+    padding: 80px;
+}
+.section-how .row{
+    padding: 20px;
+}
+.col-lg-6{
+    padding: 20px;
+}
+
+.how-btn button{
+    width: 160px;
+    margin-right: 20px;
+    padding: 10px 23px;
+    font-size: 14px !important;
+}
+.how-btn .btn-dark{
+    box-shadow: 0 20px 20px rgb(180, 180, 180);
+}
+.btn-light{
+    background: #fff;
+    border: 1px solid #343a40;
+}
+.btn-light:hover{
+    box-shadow: 0 20px 20px rgb(180, 180, 180);
+}

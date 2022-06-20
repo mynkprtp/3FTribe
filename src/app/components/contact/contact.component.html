@@ -1,1 +1,59 @@
-<p>contact works!</p>
+<div class="contact">
+  <h1>Lets Talk !!</h1>
+</div>
+<section class="section-contact">
+  <div>
+    <div>
+      If you want to know more about WILDFIT or if you have any questions about
+      the coaching or your health for that matter, please reach out to me using
+      this form : (Should also have a link to the free discovery call here)
+    </div>
+    <div>
+        <form #contactForm="ngForm" (ngSubmit)="submit(contactForm)">
+            <div class="form-group">
+                <label for="fname">First Name</label>
+                <input #name="ngModel" class="form-control" required ngModel type="text" name="fname" placeholder="First Name" ng/>
+                <div *ngIf="name.touched && name.invalid" class="alert alert-danger">
+                    First Name Required
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="lname">Last Name</label>
+                <input class="form-control" ngModel type="text" name="lname" placeholder="Last Name"/>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input #email="ngModel" class="form-control" required ngModel type="email" [email]="true" name="email" placeholder="Email"/>
+                <div *ngIf="email.touched && email.invalid" class="alert alert-danger">
+                    Email Address Required
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input #subject="ngModel" class="form-control" required ngModel type="text" name="subject" placeholder="Subject"/>
+                <div *ngIf="subject.touched && subject.invalid" class="alert alert-danger">
+                    Subject Required
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="tellMore">Tell Me More</label>
+                <textarea class="form-control" ngModel name="tellMore" cols="30" rows="5"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="category">Select a category</label>
+                <select #category="ngModel"  class="form-control" required ngModel  name="category" id="">
+                    <option value="WILDFIT 90 day Challenge">WILDFIT 90 day Challenge</option>
+                    <option value="1:1 Premium Coaching">1:1 Premium Coaching</option>
+                    <option value="Living WILDFIT">Living WILDFIT</option>
+                    <option value="I dont know yet !!!">I dont know yet !!!</option>
+                </select>
+                <div *ngIf="category.touched && category.invalid" class="alert alert-danger">
+                    Select a Category to proceed
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary" [disabled]="!contactForm.valid">submit</button>
+        </form>
+    </div>
+  </div>
+</section>

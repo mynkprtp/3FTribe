@@ -7,7 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WildfitComponent implements OnInit {
 
-  constructor() { }
+  player: YT.Player | undefined;
+  id:string = 'JcpOPYjnt1A';
+
+  savePlayer(player:any){
+    this.player=player;
+    console.log('player interface', player);
+  }
+
+  onStateChange(event: any){
+    console.log('player state', event.data);
+  }
+  constructor() { 
+  }
 
   ngOnInit(): void {
   }

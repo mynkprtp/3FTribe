@@ -7,7 +7,7 @@ import * as AoS from 'aos';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'CProject';
+  title = '3FTribe';
   ngOnInit(){
     AoS.init();
   }

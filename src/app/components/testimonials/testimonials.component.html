@@ -1,0 +1,28 @@
+<div class="testimonials">
+  <h1>TESTIMONIALS</h1>
+</div>
+<section class="section-testimonials">
+  <div class="row image-testimonials justify-content-center">
+    <div class="col-lg-6">
+      <img src="../../../assets/testimonials/testimonial1.jpg" alt="" />
+    </div>
+    <div class="col-lg-6">
+      <img src="../../../assets/testimonials/testimonial2.jpg" alt="" />
+    </div>
+    <div class="col-lg-6">
+      <img src="../../../assets/testimonials/testimonial3.png" alt="" />
+    </div>
+  </div>
+  <div class="row video-testimonials justify-content-center">
+    <div class="col-lg-4" *ngFor="let vid of vid_array">
+        <div>
+            <youtube-player
+              [videoId]="vid"
+              (ready)="savePlayer($event)"
+              (change)="onStateChange($event)"
+            >
+            </youtube-player>
+        </div>
+    </div>
+  </div>
+</section>

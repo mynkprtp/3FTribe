@@ -1,0 +1,27 @@
+.testimonials{
+    margin-top: -120px;
+    width: 100%;
+    height: 280px;
+    background:linear-gradient(rgba(255, 255, 255, 0.45),rgba(255, 255, 255, 0.45)),url("../../../assets/822048.jpg");
+    background-size: cover;
+}
+
+.testimonials h1{
+    padding-top: 150px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 60px;
+    text-align: center;
+    color: rgb(18, 56, 37);
+}
+
+.section-testimonials{
+    padding: 60px;
+}
+
+.section-testimonials .image-testimonials img{
+    width: 100%;
+}
+
+.section-testimonials .video-testimonials div > div{
+    padding: 20px;
+}

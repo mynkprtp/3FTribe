@@ -1,0 +1,58 @@
+.navbar{
+    font-family: 'Varela Round', sans-serif; 
+    padding: 30px 50px;
+}
+a{
+    text-decoration: none;
+    /* color: aliceblue; */
+}
+.navbar ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+
+.navbar i{
+    font-size: 28px;
+    margin: 0 5px;
+    color: rgb(29, 44, 54);
+    position: relative;
+}
+.navbar i .itemCount{
+    position: absolute;
+    top: 10%;
+    font-size: 16px;
+    color: red;
+}
+.social i{
+    margin:0 20px;
+}
+.navbar li {
+    position: relative;
+}
+.navbar li a{
+    padding: 0 20px;
+    color: rgb(34, 36, 37);
+    font-size: 16px !important;
+}
+.navbar li a:hover{
+    color: rgb(112, 132, 146);
+}
+.logo{
+    width: 200px;
+    height: 20px;
+}
+.logo img{
+    width: 100%;
+}
+
+.fal{
+    display: unset !important;
+}
+
+.work-btn{
+    padding: 10px 23px;
+    box-shadow: 0 20px 20px rgb(180, 180, 180);
+    font-size: 14px !important;
+}
