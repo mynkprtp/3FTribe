@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { Product } from 'app/model/product.model';
 import { ApiService } from 'app/services/api.service';
 import { CartApiService } from 'app/services/cart-api.service';
 
@@ -10,12 +9,18 @@ import { CartApiService } from 'app/services/cart-api.service';
   styleUrls: ['./shop.component.css'],
 })
 export class ShopComponent implements OnInit {
-  products: Product[] =[];
+  productList: any;
   
   constructor(private modalService: NgbModal, private api:ApiService, private cartApi:CartApiService) {
   }
-  
-  addToCart(item:Product){
+  ngOnInit(): void {
+    this.productList=this.api.getProduct();
+      this.productList.map((a:any)=> {
+        Object.assign(a,{quantity:1,total:a.price})
+      });
+  }
+
+  addToCart(item:any){
     this.cartApi.addToCart(item);
   }
   
@@ -23,8 +28,5 @@ export class ShopComponent implements OnInit {
     this.modalService.open(content, {size:'xl'});
   }
   
-  ngOnInit(): void {
-    this.products = this.api.getProduct();
-  }
 
 }

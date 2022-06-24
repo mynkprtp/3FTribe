@@ -1,0 +1,9 @@
+.section-cart{
+    padding: 60px;
+}
+.cart-img{
+    height: 100px;
+}
+.cart-img img{
+    height: 100%;
+}

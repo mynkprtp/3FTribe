@@ -6,6 +6,10 @@
     background-size: cover;
 }
 
+.section-heading{
+    text-align: center;
+}
+
 .wildfit h1{
     padding-top: 150px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -14,7 +18,7 @@
     color: rgb(18, 56, 37);
 }
 .section-intro{
-    padding: 60px;
+    /* padding: 60px; */
 }
 .introduce{
     margin-bottom: 20px;
@@ -30,7 +34,7 @@
     flex-basis: 50%;
 }
 .introduce-img img{
-    height: 580px;
+    height: 480px;
 }
 
 .introduce-content{
@@ -46,14 +50,17 @@
     margin-bottom: 30px;
 }
 .introduce-content p{
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .section-intro .description{
     margin: 50px;
     padding: 20px;
 }
-
+.limitTextHeight {
+    height: 285px;
+    overflow: hidden;
+}
 .section-intro .description h3{
     display: flex;
     justify-content: center;
@@ -66,47 +73,5 @@
 .section-intro .video{
     display: flex;
     justify-content: center;
-    /* align-items: center; */
 }
 
-.wildfit90{
-    background-image: url("../../../assets/822048.jpg");
-    padding: 30px;
-}
-
-.wildfit90 div:first-child{
-    background-color: aliceblue;
-    padding: 20px;
-}
-
-.wildfit90 div:first-child h3{
-    text-align: center;
-}
-
-.wildfit90 .howditwork .howditwork-title{
-    text-align: center;
-    font-size: 40px;
-    padding: 20px;
-}
-
-.wildfit90 .howditwork div {
-    /* background-color: aliceblue; */
-    margin-bottom: 20px;
-}
-
-.wildfit90 .howditwork div > h3{
-    font-size: 20px;
-    margin-bottom: 20px;
-    font-weight: 500;
-}
-.wildfit90 .howditwork div > p{
-    font-size: 15px;
-}
-.wildfit90 .howditwork div > div{
-    /* background-color: aliceblue; */
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 10px;
-    height: 360px;
-    /* color: white; */
-}

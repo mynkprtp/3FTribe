@@ -1,12 +1,12 @@
-<div class="wildfit">
+<!-- <div class="wildfit">
   <h1>WILDFIT</h1>
-</div>
+</div> -->
 <section class="section-intro">
   <div class="introduce row">
-    <div class="col-lg-6 introduce-img">
+    <div class="col-lg-4 introduce-img">
       <img src="../../../assets/introduce.jpg" alt="" />
     </div>
-    <div class="col-lg-6 introduce-content">
+    <div class="col-lg-8 introduce-content">
       <p>
         WILDFIT's founder is Eric Edmeades. Eric had struggled with many health
         issues since childhood. He was that kid who always got sick, had a lot
@@ -90,8 +90,23 @@
       handle your emotional eating, understand the 6 different types of hunger
       and be free from the manipulations of the diet industry.
     </p>
-    <div class="video">
-      <div>
+    <div class="video" width="600" height="340">
+      <div style="position: relative" width="100%" height="100%">
+        <div
+          *ngIf="!loaded"
+          style="
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            top: 50%;
+            left: 50%;
+          "
+        >
+          <div class="spinner-border" role="status">
+            <span class="sr-only"></span>
+          </div>
+        </div>
         <youtube-player
           [height]="340"
           [width]="600"
@@ -102,161 +117,153 @@
         </youtube-player>
       </div>
     </div>
-  </div>
-  <div class="wildfit90">
-    <div class="whatisw90">
-      <h3>What is WILDFIT 90 ?</h3>
-      <div>
-        WILDFIT 90 is a 90 day group coaching health transformation program that
-        teaches you how to permanently alter your relationship with food. If you
-        are someone who wants to release weight, gain or maintain weight, if you
-        are an athlete seeking peak performance or someone who wants to live
-        longer and with greater vitality, this is the place to be.
-      </div>
-    </div>
-    <div class="howditwork row justify-content-center">
-      <h3 class="col-lg-12 howditwork-title">How Does It Work ??</h3>
-      <div class="part1 col-lg-3">
-        <div>
-          <h3>Week 1: WILDFIT PRINCIPLES AND FOUNDATION</h3>
-          <p>
-            The first week is by far the most important week of the program. We
-            gain insights into why we eat, what we eat, when we eat it. You'll
-            be surprised to find out what makes you eat that pint of ice-cream
-            in the middle of the night!!
-          </p>
-        </div>
-      </div>
-      <div class="part2 col-lg-3">
-        <div>
-          <h3>Week 2-3: UNDERSTAND SUGAR DEPENDENCY</h3>
-          <p>
-            These 2 weeks help address our dependency on processed foods and
-            sugars. We learn how sugars sneak into our lives in almost
-            everything we buy at the supermarket and how to deal with it.
-          </p>
-        </div>
-      </div>
-      <div class="part3 col-lg-3">
-        <div>
-          <h3>Week 4-5: NUTRITIONAL TOP UP</h3>
-          <p>
-            In these weeks we prepare our bodies for the healing process to
-            start. In WILDFIT we believe in preparing our bodies by giving it
-            the best nutrition possible before making any change.
-          </p>
-        </div>
-      </div>
-      <div class="part4 col-lg-3">
-        <div>
-          <h3>Week 6-10: OUR BODIES START TO HEAL</h3>
-          <p>
-            This is when your body starts to respond to all the foundational
-            work that we did in the weeks before. Weight starts to shift, energy
-            levels stabilize, body shape starts to change and any more changes
-            start to reflect!
-          </p>
-        </div>
-      </div>
-      <div class="part5 col-lg-3">
-        <div>
-          <h3>Week 11: WILDFIT SEASONS</h3>
-          <p>
-            In the span of 90 days, we will learn how to eat seasonally to get
-            the greatest benefit for our bodies!
-          </p>
-        </div>
-      </div>
-      <div class="part6 col-lg-3">
-        <div>
-          <h3>Week 12: BURN SOME MORE FAT</h3>
-          <p>
-            In this week, you will receive guidance regarding how to transition
-            between seasons by yourself. This prepares you for your LIVING
-            WILDFIT phase after the 90 days!
-          </p>
-        </div>
-      </div>
-      <div class="part7 col-lg-3">
-        <div>
-          <h3>Week 13: LIVING WILDFIT</h3>
-          <p>
-            In this week, you will  learn how to practise living WILDFIT by
-            choosing your base season and making food decisions on your own!
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="benefit">
-    <h3>How will I benefit ?</h3>
-    <div>
-      <h3>Food Freedom</h3>
+    <div class="introduce-content">
+      <h3>WILDFIT FAQs</h3>
+      <p><b>IS THIS A DIET? WHAT IF I DID KETO AND PALEO ALREADY?</b></p>
       <p>
-        Ever felt like a certain food has some kind of power over you ? Or a
-        food that makes saying NO to it, next to impossible ? And have you ever
-        realized that once you have those foods, do you feel guilty ? So if
-        these foods are so good, why do they make you feel guilty ? Fair
-        question, right ? So here is the thing, what has been described above
-        isn't freedom. This is some kind of toxic relationship that we build
-        with certain foods in the course of our lives that taste good but make
-        you feel guilty or even cause physical discomfort (think about how you
-        feel after eating a lot of sugar!). WILDFIT provides you with the tools
-        to identify these toxic , non-functional food relationships and
-        transform them into functional ones. The concept behind this is the
-        behavioural change dynamics that help us break these non-functional
-        relationships and build healthy habits that lasts a lifetime. At the end
-        of 90 days, these are some of things my clients say :
+        There are many similarities between some WILDFIT seasons and the Paleo
+        Diet and the Keto Diet. However, what distinguishes WILDFIT is the
+        enormous emphasis we place on mindset and behavioural change. Instead of
+        just telling you what to eat, we give you the tools to rewire your
+        thoughts (and therefore, your actions) around food, alcohol, caffeine,
+        and much more. If you have experience in doing Keto / Paleo before, you
+        could find yourself in a better position to understand the concepts of
+        seasons! So all the more reason to try WILDFIT!!
       </p>
-      <ul>
-        <li>"I no longer have any sugar cravings"</li>
-        <li>"Not sure why I liked eating ice cream so much, its GROSS!"</li>
-        <li>"I do not feel any desire to eat processed foods."</li>
-        <li>
-          "Vacations, family gatherings, social functions do not make me nervous
-          about my food choices!"
-        </li>
-      </ul>
+      <p><b>WHAT IS YOUR REFUND POLICY?</b></p>
       <p>
-        FOOD FREEDOM is all about being able to eat what you want, whenever you
-        want, how much ever you want. And it ALSO means, being able to say NO to
-        foods that you do not want to eat anymore. WILDFIT will help you reach a
-        level of food freedom which is organic and does not require any
-        willpower.
+        We believe so firmly in WILDFIT that we’re proud to offer a 100%
+        Satisfaction Guarantee. If you complete at least 95% of the program and
+        you were not pleased with your experience, and did not experience any
+        progress we’ll gladly offer you a full refund, no questions asked!
       </p>
-    </div>
-    <div>
-      <h3>OPTIMAL HEALTH</h3>
+      <p><b>IS WILDFIT SUITABLE FOR VEGETARIANS AND VEGANS?</b></p>
       <p>
-        WILDFIT is not a diet, it is a way of life that helps you achieve
-        optimal health. When our body achieves optimal health, diseases, health
-        conditions, allergies, body aches/pains etc start to disappear. If you
-        are carrying additional weight, that starts to come off. If want to
-        gain/maintain your weight, that becomes easy. You achieve peak
-        performance, if you are an athlete. You gain more confidence in yourself
-        and making good food decisions becomes organic and requires NO
-        WILLPOWER!
+        Yes, you can definitely still do WILDFIT and experience the various
+        health benefits that come with it. But just keep in mind that the
+        WILDFIT approach will recommend certain animal-based foods at certain
+        parts of the 90-day program, which you can substitute with other
+        plant-based foods that align with your dietary choices. The guidance
+        around substitutions will be provided!
       </p>
-    </div>
-    <div>
-      <h3>TRUST YOUR BODY & WIN IN LIFE</h3>
-      <P
-        >With WILDFIT, you learn to listen to your body. Our bodies are
-        magnificent machines that have all the wisdom in it to give us
-        indications of what to eat and what not to eat. With continued use of
-        processed foods and foods that do not serve us, that inner voices gets
-        drowned out. WILDFIT helps remove all the obstacles so we can listen and
-        get cues from our body. This completely eliminates the desire to put
-        non-functional foods in our bodies and help achieve greater vitality in
-        our lives. When you improve your health, everything else in life becomes
-        better. You become more productive, you have more energy to follow your
-        dreams, you manage your time better, have a better relationships with
-        your loved ones, create healthy boundaries and succeed in every area of
-        life!
-      </P>
-    </div>
-    <div>
-      <img src="../../../assets/moneyback.png" alt="MONEY BACK GUARANTEE" height="550px"> 
+      >
+      <p>
+        <b
+          >WHAT KIND OF WEIGHT OR HEALTH LEVEL SHOULD I CURRENTLY BE AT TO
+          BENEFIT FROM WILDFIT?
+        </b>
+      </p>
+      <p>
+        It doesn’t matter where you’re at now - because WILDFIT is designed to
+        meet you there, and take you where you need to be. Our students range
+        from people with severe health issues to high-performance athletes. Many
+        come to us with a variety of goals including weight loss, weight gain,
+        more energy, symptom reduction, better sleep, levels of intimacy and
+        fertility, and even an overall desire to feel better and have more
+        energy.  Also, 96% of people who start WILDFIT, finish it. Which further
+        proves that it’s suitable and effective for anyone at any fitness or
+        weight level.
+      </p>
+      <p><b>WILL I NEED TO EXERCISE WHILE ON WILDFIT?</b></p>
+      <p>
+        No. One of the biggest myths in health and fitness is the idea that you
+        need to exercise to get healthy. But the truth is, science has shown
+        that 95% of your body shape is determined by your diet, and only 5% is
+        determined by your physical activity.  However, one of the best
+        side-effects of going on the WILDFIT program is that you will likely
+        experience spikes in energy and you may actually feel like wanting to
+        exercise. But this is not a necessary aspect of the program.
+      </p>
+      <p><b>WILL WILDFIT GET RID OF DISEASES?</b></p>
+      <p>
+        WILDFIT is not a medical program and should not be taken as medical
+        advice. While clients have reported normalized blood sugar, disappearing
+        allergies, healthy weight loss, and a dramatic reduction of various
+        symptoms, these are simply side effects of living a better lifestyle.
+        While many clients have eliminated various symptoms and ailments - and
+        reduced their dependency on medication - we suggest that before making
+        any major changes to your health-care plans (including medication
+        dosage) you should consult your medical practitioner.
+      </p>
+      <p><b>HOW LONG DOES IT TAKE TO SEE RESULTS?</b></p>
+      <p>
+        There have been clients who see results well before program completion.
+        Not everyone will experience the same, but it's possible. And it also
+        depends on how willing you are in terms of allowing that change to
+        happen. But overall, we're confident to say that in as little as 30
+        days, you will experience radical shifts in your weight, energy, libido,
+        sleeping patterns and overall happiness levels. If you're sceptical, try
+        this program anyway: because you have 30 days to prove your sceptic mind
+        wrong. Eric Edmeades so far has not had a case where his clients have
+        asked for a refund. The program's completion rate is over 90%, which
+        leaves us confident that it's almost impossible to not see any results
+        with the WILDFIT program.
+      </p>
+      <p><b>CAN WILDFIT HELP ME WITH MY MENTAL AND EMOTIONAL WELLBEING?</b></p>
+      <p>
+        Yes, It will help you. You are what you eat. You eat because you are
+        stressed and you are stressed because you eat. Food has effects on not
+        just your physical body but your mental health as well.
+      </p>
+      <p>
+        <b
+          >WILL THIS PROGRAM WORK FOR ME, EVEN IF NORMAL DIETS DIDN’T IN THE
+          PAST?</b
+        >
+      </p>
+      <p>
+        Above all else, the WILDFIT program is based on one scientific fact:
+        it’s both infuriatingly hard, and unnecessary to try to improve your
+        health through conventional diet and exercise programs. Statistics even
+        show that the average American actually gains 3 lbs for every diet
+        program they try. Because these traditional diets are designed by people
+        who don't approach health problems holistically. On the contrary, the
+        WILDFIT program is based on the principle that ‘every living thing has a
+        natural diet’ and that the degree to which a species can stay on that
+        diet is the same degree to which it will experience health and
+        longevity.  WILDFIT draws heavily from evolutionary history, nutritional
+        anthropology and modern-day hunter-gatherer communities to map out the
+        perfectly natural human diet. When this is combined with the powerful
+        science of behavioural psychology, it makes for a body transformation
+        program that’s more permanently effective than anything else out there.
+         So yes, we’re confident that WILDFIT will do wonders for your body and
+        overall wellbeing - no matter your past experiences with weight loss or
+        healing.
+      </p>
+      <p><b>I’M ALLERGIC TO CERTAIN TYPES OF FOOD. CAN WILDFIT HELP ME?</b></p>
+      <p>
+        We highly recommend you first consult your doctor regarding any food
+        allergies you may think you have. If you indeed have any confirmed
+        allergies to any of the foods recommended in the WILDFIT program, please
+        avoid them.  With that said, the WILDFIT program is not a
+        hyper-restrictive diet where you’ll be limited to a restrictive range of
+        foods. So, you will likely have other alternatives to choose from.
+         Nevertheless, over the course of the 90 days, there will be LIVE
+        coaching calls with a certified WILDFIT Coach.  Interestingly, because
+        of the way WILDFIT is structured, some of our past students discovered
+        that they had attributed the wrong type of food to their allergies and
+        chronic inflammation. While we cannot guarantee this will be the case
+        for you, WILDFIT will certainly help you gather plenty of insights and
+        data on how certain foods can impact your unique body composition.
+         Please let me know if you have any allergies prior to starting your
+        journey for best success.
+      </p>
+      <p><b>WILL WILDFIT RECOMMEND ME TO TAKE SUPPLEMENTS?</b></p>
+      <p>
+        No, you do not need to take any additional supplements during the
+        program or after the program has ended. WILDFIT is designed to create
+        permanent change. This has been proven time and time again with our
+        students who, after months of having completed WILDFIT, never regain the
+        extra weight and remain at peak levels of health.  Our aim is for you to
+        return to your healthiest state for good
+      </p>
+      <p><b>HOW SHOULD I PREPARE FOR THE WILDFIT PROGRAM?</b></p>
+      <p>
+        Don't. Don't change a thing until the program begins. You may be tempted
+        to start making changes or improving your habits, but the WILDFIT
+        program works best when you simply arrive as you are; not on best
+        behaviour. For now, keep eating normally and don't change a thing.
+      </p>
     </div>
   </div>
 </section>

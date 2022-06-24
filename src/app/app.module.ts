@@ -8,10 +8,10 @@ import { AngularFireStorageModule } from '@angular/fire/compat/storage';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import {AngularFireDatabaseModule} from '@angular/fire/compat/database'
 import {HttpClientModule} from '@angular/common/http'
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/shared/header/header.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeComponent } from './components/home/home.component';
@@ -24,13 +24,12 @@ import { NewHeaderComponent } from './components/shared/new-header/new-header.co
 import { HowItWorksComponent } from './components/how-it-works/how-it-works.component';
 import { MyStoryComponent } from './components/my-story/my-story.component';
 import { environment } from 'environments/environment';
-import { ProductComponent } from './components/shop/product/product.component';
 import { CartComponent } from './components/shop/cart/cart.component';
+import { Wildfit90Component } from './components/wildfit/wildfit90/wildfit90.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
     FooterComponent,
     HomeComponent,
     AboutComponent,
@@ -41,8 +40,8 @@ import { CartComponent } from './components/shop/cart/cart.component';
     NewHeaderComponent,
     HowItWorksComponent,
     MyStoryComponent,
-    ProductComponent,
     CartComponent,
+    Wildfit90Component,
   ],
   imports: [
     BrowserModule,
@@ -55,7 +54,8 @@ import { CartComponent } from './components/shop/cart/cart.component';
     AngularFireAuthModule,
     AngularFireStorageModule,
     AngularFirestoreModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

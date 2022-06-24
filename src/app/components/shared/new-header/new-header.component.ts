@@ -11,12 +11,18 @@ export class NewHeaderComponent implements OnInit {
 
   totalItems:number=0;
   constructor(private cartApi:CartApiService) { }
-
-  ngOnInit(){
-    this.cartApi.getProductData().subscribe((res)=>{
-      this.totalItems = res.length;
-    })
-    console.log(this.totalItems);
-  }
+    collapsed=true;
+    
+    ngOnInit(){
+      this.cartApi.getProductData().subscribe((res)=>{
+        let count=0;
+        res.map((item:any)=>{
+          count+=item.quantity;
+          console.log(item);
+        })
+        this.totalItems=count;
+      })
+      console.log(this.totalItems);
+    }
 
 }

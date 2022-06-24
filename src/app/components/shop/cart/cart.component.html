@@ -1,1 +1,34 @@
-<p>cart works!</p>
+<section class="section-cart">
+    <div class="cart">
+        <div *ngIf="!totalAmount" class="emptyCart">
+            CART IS EMPTY 
+            <a routerLink="/shop">Go n SHOP</a>
+        </div>
+        <div *ngIf="totalAmount" class="cart-items">
+            <div class="row" *ngFor="let item of cartItems, let i = index">
+                <div class="col-lg-1">{{i+1}}</div>
+                <div class="col-lg-2 cart-img">
+                    <img src="../../../../assets/shop/{{item.imageUrl}}.jpg" alt="">
+                </div>
+                <div class="col-lg-3">{{item.name}}</div>
+                <div class="col-lg-3">
+                    <div class="d-flex flex-row justify-content-center">
+                        <div class="reduce btn btn-primary" style="border-radius: 10px;" (click)="redQuantity(item)">-</div>
+                        <div class="btn" style="border-radius: 10px;cursor:default;">{{item.quantity}}</div>
+                        <div class="increase btn btn-primary" style="border-radius: 10px;" (click)="incQuantity(item)">+</div>
+                    </div>
+                </div>
+                <div class="col-lg-1">{{item.total}}</div>
+                <div class="col-lg-1">
+                    <div class="d-flex flex-row justify-content-center">
+                        <div (click)="removeProduct(item)" class="btn btn-close " style="border-radius: 20px; color:white;background-color: red; " >X</div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="totalAmount">{{totalAmount}}</div>
+                <div class="checkout">checkout</div>
+            </div>
+        </div>
+    </div>
+</section>

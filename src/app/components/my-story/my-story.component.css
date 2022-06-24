@@ -22,7 +22,7 @@
     font-size: 36px;
     text-align: center;
 }
-.myStory h1{
+.myStory > h1:first-child{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 60px;
     text-align: center;
@@ -40,7 +40,8 @@
 .part1 div:first-child , .part2 div:nth-child(2){
     padding: 40px;
     flex-basis: 50%;
-    background-color: aliceblue;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
 }
 .bgpart1 , .bgpart2, .part5 div{
     display: flex;
@@ -58,7 +59,8 @@
 }
 .part3 div, .part4 div{
     padding: 20px;
-    background-color: aliceblue;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
 }
 .part3 div ul{
     padding: 0 20px 20px;

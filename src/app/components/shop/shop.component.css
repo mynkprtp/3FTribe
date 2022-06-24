@@ -18,8 +18,15 @@
 }
 .section-shop a{
     text-decoration: none;
+    transition: all 200ms ease-in-out;
+}
+
+.section-shop a:hover{
+    transform: scale(1.03);
 }
 .section-shop .imgContainer{
+    background: url("../../../assets/822048.jpg");
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -27,11 +34,24 @@
 .section-shop .imgContainer div:first-child{
     height: 500px;
 }
+.section-shop .imgContainer div:last-child{
+    height: 100px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.45);
+    border-radius: 8px;
+    padding: 5px 10px;
+}
 .section-shop .imgContainer img{
-    width: 100%;
+    width: 330px;
 }
 
 .section-shop .modal-body{
     display: flex;
     justify-content: center;
+}
+
+@media (max-width:1132px){
+    .section-shop .imgContainer img{
+        width: 300px;
+    }   
 }

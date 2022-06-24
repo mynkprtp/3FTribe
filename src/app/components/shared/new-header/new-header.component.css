@@ -1,10 +1,13 @@
 .navbar{
     font-family: 'Varela Round', sans-serif; 
     padding: 30px 50px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 a{
     text-decoration: none;
-    /* color: aliceblue; */
 }
 .navbar ul{
     margin: 0;
@@ -23,7 +26,8 @@ a{
     position: absolute;
     top: 10%;
     font-size: 16px;
-    color: red;
+    color: rgb(5, 43, 21);
+    font-weight:500;
 }
 .social i{
     margin:0 20px;
@@ -33,20 +37,14 @@ a{
 }
 .navbar li a{
     padding: 0 20px;
-    color: rgb(34, 36, 37);
+    color: rgb(5, 43, 21);
     font-size: 16px !important;
 }
 .navbar li a:hover{
-    color: rgb(112, 132, 146);
+    color: rgb(93, 182, 140);
+    transform:scale(1.1);
+    transition: all 100ms ease-in-out;
 }
-.logo{
-    width: 200px;
-    height: 20px;
-}
-.logo img{
-    width: 100%;
-}
-
 .fal{
     display: unset !important;
 }
@@ -56,3 +54,24 @@ a{
     box-shadow: 0 20px 20px rgb(180, 180, 180);
     font-size: 14px !important;
 }
+@media (max-width:1034px){
+    .work-btn{
+        display: none;
+    }
+}
+.active{
+    color: rgb(1, 20, 4) !important;
+    font-weight: 700 !important;
+}
+
+.navbar-text div{
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width:940px){
+    .navbar-text div{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+} 

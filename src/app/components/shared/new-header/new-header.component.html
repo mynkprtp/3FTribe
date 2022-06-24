@@ -1,18 +1,18 @@
-<nav>
-    <div class="navbar d-flex justify-content-between">
-      <div class="logo">
-        <a routerLink="/home"><img src="../../../../assets/3ft.png" alt="LOGO"></a>
-      </div>  
-      <div class="navlinks">
-        <ul>
-          <li><a routerLink="/myStory">About</a></li>
-          <li><a routerLink="/wildfit">Wildfit</a></li>
-          <li><a routerLink="/testimonials">Testimonials</a></li>
-          <li><a routerLink="/shop">Shop</a></li>
-          <li><a routerLink="/contact">Contact</a></li>
-        </ul>
-      </div>
-      <div class="d-flex flex-row align-items-center">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" routerLink="/home"><img src="../../../../assets/3ft.png" width="120px" alt=""></a>
+  <button class="navbar-toggler" type="button" (click)="collapsed= !collapsed">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" [class.collapse]="collapsed" (window:resize)="collapsed=true" >
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-link"><a routerLink="/myStory" routerLinkActive="active">About</a></li>
+      <li class="nav-link"><a routerLink="/wildfit" routerLinkActive="active">Wildfit</a></li>
+      <li class="nav-link"><a routerLink="/wildfit90" routerLinkActive="active">Wildfit90</a></li>
+      <li class="nav-link"><a routerLink="/shop" routerLinkActive="active">Shop</a></li>
+      <li class="nav-link"><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+    </ul>
+    <span class="navbar-text">
+      <div class="">
         <a routerLink="/cart">
           <i class="p-3 fal fa-shopping-cart">
             <span class="itemCount">{{totalItems}}</span>
@@ -20,7 +20,6 @@
         </a>
         <button class="btn btn-dark work-btn">Work with me</button>
       </div>
-    </div>
-  </nav>
-  <!-- <div class="nav-bg"><img src="../../../../assets/anastase-maragos-9dzWZQWZMdE-unsplash.jpg" alt=""></div> -->
-  
+    </span>
+  </div>
+</nav>

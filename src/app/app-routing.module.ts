@@ -8,12 +8,14 @@ import { CartComponent } from './components/shop/cart/cart.component';
 import { TestimonialsComponent } from './components/testimonials/testimonials.component';
 import { WildfitComponent } from './components/wildfit/wildfit.component';
 import { MyStoryComponent } from './components/my-story/my-story.component';
+import { Wildfit90Component } from './components/wildfit/wildfit90/wildfit90.component';
 
 const routes: Routes = [
   {path:'about',component:AboutComponent},
+  {path:'wildfit90',component:Wildfit90Component},
   {path:'myStory',component:MyStoryComponent},
   {path:'home',component:HomeComponent},
-  {path:'wildfit',component:WildfitComponent },
+  {path:'wildfit',component:WildfitComponent},
   {path:'shop',component:ShopComponent},
   {path:'cart',component:CartComponent},
   {path:'contact',component:ContactComponent},
@@ -23,7 +25,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {scrollPositionRestoration:'enabled'})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

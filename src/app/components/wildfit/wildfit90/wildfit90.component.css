@@ -1,0 +1,120 @@
+.section-heading{
+    text-align: center;
+}
+
+.wildfit90{
+    padding: 30px;
+}
+.whatisw90{
+    background-image: url("../../../../assets/822048.jpg");
+}
+
+.wildfit90 div:first-child{
+    background-color: aliceblue;
+    padding: 5px 10px;
+}
+
+.wildfit90 div:first-child h3{
+    text-align: center;
+}
+
+.wildfit90 .howditwork .howditwork-title{
+    text-align: center;
+    font-size: 40px;
+    padding: 10px;
+}
+
+.wildfit90 .howditwork .week-container {
+    margin-bottom: 10px;
+    box-shadow: 0px 5px 10px rgb(59, 121, 90), 0 5px 10px rgb(59, 121, 90) ;
+    border-radius: 12px;
+    transition: all 200ms ease-in-out;
+}
+.wildfit90 .howditwork .week-container:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+    box-shadow: 0px 5px 10px rgb(18, 56, 37), 0 5px 10px rgb(18, 56, 37) ;
+}
+.wildfit90 .howditwork .week-container h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.wildfit90 .howditwork .week-container > p{
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+.wildfit90 .howditwork .week-container .week-content{
+    width: 100%;
+    padding: 10px 10px 0;
+}
+.wildfit90 .howditwork .week-container .week{
+    background-color: rgba(177, 199, 181, 0.7);
+    border-radius: 10px;
+    width: 150px;
+}
+
+/* ----------------------BENEFIT-------------------- */
+
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 20px;
+}
+.card-outer{
+    width: 350px;
+    padding: 20px;
+}
+.card-inner{
+    border: none;
+    background-color: #fff;
+    box-shadow:0 3px 10px rgb(98, 141, 120),0 -3px 10px rgb(98, 141, 120), 0 3px 10px rgb(98, 141, 120),0 -3px 10px rgb(98, 141, 120);
+    transition: all 100ms ease-in;
+}
+.card-inner:hover{
+    transform: scale(1.03);
+    box-shadow:0 0px 10px rgb(59, 121, 90),0 0px 10px rgb(59, 121, 90), 0 0px 10px rgb(59, 121, 90),0 0px 10px rgb(59, 121, 90);
+}
+
+.card-inner p{
+    font-size: 14px;
+}
+.card-image{
+    height: 150px;
+    width: 100%;
+    overflow: hidden;
+}
+.card-image img{
+    width: 100%;
+}
+.card-content{
+    padding: 20px;
+}
+.readButton{
+    padding: 0 20px;
+}
+.btn-primary{
+    margin: 20px;
+}
+.card-content h3{
+    text-align: center;
+    font-size:18px;
+}
+
+@media (max-width:980px){
+    .card-container{
+        flex-direction: column;
+    }
+    .card-outer{
+        width: 450px;
+    }
+    .card-content{
+        padding-bottom:0 ;
+    }
+    .btn-primary{
+        margin-top: 0px;
+    }
+}
