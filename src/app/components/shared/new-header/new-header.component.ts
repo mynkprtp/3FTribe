@@ -8,7 +8,7 @@ import {CartApiService} from '../../../services/cart-api.service'
   styleUrls: ['./new-header.component.css']
 })
 export class NewHeaderComponent implements OnInit {
-
+  show:boolean=false;
   totalItems:number=0;
   constructor(private cartApi:CartApiService) { }
     collapsed=true;

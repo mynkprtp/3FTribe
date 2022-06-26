@@ -42,12 +42,13 @@ a{
 }
 .navbar li a:hover{
     color: rgb(93, 182, 140);
-    transform:scale(1.1);
+    /* transform:scale(1.1); */
     transition: all 100ms ease-in-out;
 }
 .fal{
     display: unset !important;
 }
+
 
 .work-btn{
     padding: 10px 23px;

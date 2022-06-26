@@ -12,14 +12,20 @@
     </div>
     <div class="howditwork justify-content-center">
       <h3 class="section-heading">How Does It Work ??</h3>
-      <div class="part1">
+      <div class="part1" (click)="show1 = !show1">
         <div class="d-flex week-container">
-          <div class="week d-flex justify-content-center align-items-center">
+          <div class="week">
             <h3>Week 1:</h3>
           </div>
           <div class="week-content">
-            <h3>WILDFIT PRINCIPLES AND FOUNDATION</h3>
-            <p>
+            <div>
+              <h3>WILDFIT PRINCIPLES AND FOUNDATION</h3>
+              <div
+                class="drop-btn d-flex justify-content-center align-items-center">
+                <i class="fas fa-arrow-down" [ngClass]="{'rotate-left':show1,'rotate-right':!show1}"></i>
+              </div>
+            </div>
+            <p [ngClass]="{'zero-height': show1, 'full-height':!show1 }">
               The first week is by far the most important week of the program.
               We gain insights into why we eat, what we eat, when we eat it.
               You'll be surprised to find out what makes you eat that pint of
@@ -28,14 +34,20 @@
           </div>
         </div>
       </div>
-      <div class="part2">
+      <div class="part2" (click)="show2 = !show2">
         <div class="d-flex week-container">
-          <div class="week d-flex justify-content-center align-items-center">
+          <div class="week">
             <h3>Week 2-3:</h3>
           </div>
           <div class="week-content">
-            <h3>UNDERSTAND SUGAR DEPENDENCY</h3>
-            <p>
+            <div>
+              <h3>UNDERSTAND SUGAR DEPENDENCY</h3>
+              <div
+                class="drop-btn d-flex justify-content-center align-items-center">
+                <i class="fas fa-arrow-down" [ngClass]="{'rotate-left':show2,'rotate-right':!show2}"></i>
+              </div>
+            </div>
+            <p [ngClass]="{'zero-height': show2, 'full-height':!show2 }">
               These 2 weeks help address our dependency on processed foods and
               sugars. We learn how sugars sneak into our lives in almost
               everything we buy at the supermarket and how to deal with it.
@@ -43,14 +55,20 @@
           </div>
         </div>
       </div>
-      <div class="part3">
+      <div class="part3" (click)="show3 = !show3">
         <div class="d-flex week-container">
-          <div class="week d-flex justify-content-center align-items-center">
+          <div class="week">
             <h3>Week 4-5:</h3>
           </div>
           <div class="week-content">
-            <h3>NUTRITIONAL TOP UP</h3>
-            <p>
+            <div>
+              <h3>NUTRITIONAL TOP UP</h3>
+              <div
+                class="drop-btn d-flex justify-content-center align-items-center">
+                <i class="fas fa-arrow-down" [ngClass]="{'rotate-left':show3,'rotate-right':!show3}"></i>
+              </div>
+            </div>
+            <p [ngClass]="{'zero-height': show3, 'full-height':!show3 }">
               In these weeks we prepare our bodies for the healing process to
               start. In WILDFIT we believe in preparing our bodies by giving it
               the best nutrition possible before making any change.
@@ -58,14 +76,20 @@
           </div>
         </div>
       </div>
-      <div class="part4">
+      <div class="part4" (click)="show4 = !show4">
         <div class="d-flex week-container">
-          <div class="week d-flex justify-content-center align-items-center">
+          <div class="week">
             <h3>Week 6-10:</h3>
           </div>
           <div class="week-content">
-            <h3>OUR BODIES START TO HEAL</h3>
-            <p>
+            <div>
+              <h3>OUR BODIES START TO HEAL</h3>
+              <div
+                class="drop-btn d-flex justify-content-center align-items-center">
+                <i class="fas fa-arrow-down" [ngClass]="{'rotate-left':show4,'rotate-right':!show4}"></i>
+              </div>
+            </div>
+            <p [ngClass]="{'zero-height': show4, 'full-height':!show4 }">
               This is when your body starts to respond to all the foundational
               work that we did in the weeks before. Weight starts to shift,
               energy levels stabilize, body shape starts to change and any more
@@ -74,28 +98,40 @@
           </div>
         </div>
       </div>
-      <div class="part5">
+      <div class="part5" (click)="show5 = !show5">
         <div class="d-flex week-container">
-          <div class="week d-flex justify-content-center align-items-center">
+          <div class="week">
             <h3>Week 11:</h3>
           </div>
           <div class="week-content">
-            <h3>WILDFIT SEASONS</h3>
-            <p>
+            <div>
+              <h3>WILDFIT SEASONS</h3>
+              <div
+                class="drop-btn d-flex justify-content-center align-items-center">
+                <i class="fas fa-arrow-down" [ngClass]="{'rotate-left':show5,'rotate-right':!show5}"></i>
+              </div>
+            </div>
+            <p [ngClass]="{'zero-height': show5, 'full-height':!show5 }">
               In the span of 90 days, we will learn how to eat seasonally to get
               the greatest benefit for our bodies!
             </p>
           </div>
         </div>
       </div>
-      <div class="part6">
+      <div class="part6" (click)="show6 = !show6">
         <div class="d-flex week-container">
-          <div class="week d-flex justify-content-center align-items-center">
+          <div class="week">
             <h3>Week 12:</h3>
           </div>
           <div class="week-content">
-            <h3>BURN SOME MORE FAT</h3>
-            <p>
+            <div>
+              <h3>BURN SOME MORE FAT</h3>
+              <div
+                class="drop-btn d-flex justify-content-center align-items-center">
+                <i class="fas fa-arrow-down" [ngClass]="{'rotate-left':show6,'rotate-right':!show6}"></i>
+              </div>
+            </div>
+            <p [ngClass]="{'zero-height': show6, 'full-height':!show6 }">
               In this week, you will receive guidance regarding how to
               transition between seasons by yourself. This prepares you for your
               LIVING WILDFIT phase after the 90 days!
@@ -103,14 +139,20 @@
           </div>
         </div>
       </div>
-      <div class="part7">
+      <div class="part7" (click)="show7 = !show7">
         <div class="d-flex week-container">
-          <div class="week d-flex justify-content-center align-items-center">
+          <div class="week">
             <h3>Week 13:</h3>
           </div>
           <div class="week-content">
-            <h3>LIVING WILDFIT</h3>
-            <p>
+            <div>
+              <h3>LIVING WILDFIT</h3>
+              <div
+                class="drop-btn d-flex justify-content-center align-items-center">
+                <i class="fas fa-arrow-down" [ngClass]="{'rotate-left':show7,'rotate-right':!show7}"></i>
+              </div>
+            </div>
+            <p [ngClass]="{'zero-height': show7, 'full-height':!show7 }">
               In this week, you will  learn how to practise living WILDFIT by
               choosing your base season and making food decisions on your own!
             </p>
@@ -126,26 +168,18 @@
         <ng-template #content1 let-modal>
           <div class="modal-header">
             <h4 class="modal-title text-center">OPTIMAL HEALTH</h4>
-            <button
-              type="button"
-              class="btn-danger btn"
-              aria-label="Close"
-              (click)="modal.dismiss('Cross click')"
-            >
-              CLOSE
-            </button>
           </div>
           <div
             class="modal-body d-flex justify-content-center"
             style="
               background: linear-gradient(
-                  rgba(9, 80, 7, 0.8),
-                  rgba(5, 61, 19, 0.8)
+                  rgba(174, 204, 173, 0.8),
+                  rgba(180, 196, 184, 0.8)
                 ),
                 url(../../../../assets/meghan-holmes-buWcS7G1_28-unsplash.jpg);
               background-size: cover;
               background-position: center;
-              color: #fff;
+              color: black;
             "
           >
             <div class="itemDescription col-lg-12">
@@ -164,7 +198,7 @@
           <div class="modal-footer">
             <button
               type="button"
-              class="btn btn-primary"
+              class="read-btn btn btn-dark"
               aria-label="Close"
               (click)="modal.dismiss('Cross click')"
             >
@@ -192,7 +226,7 @@
           <button
             type="button"
             (click)="openLg(content1)"
-            class="btn btn-primary"
+            class="read-btn read-more"
           >
             Read More
           </button>
@@ -204,26 +238,18 @@
             <h4 class="modal-title text-center">
               TRUST YOUR BODY & WIN IN LIFE
             </h4>
-            <button
-              type="button"
-              class="btn-danger btn"
-              aria-label="Close"
-              (click)="modal.dismiss('Cross click')"
-            >
-              CLOSE
-            </button>
           </div>
           <div
             class="modal-body d-flex justify-content-center"
             style="
               background: linear-gradient(
-                  rgba(9, 80, 7, 0.8),
-                  rgba(5, 61, 19, 0.8)
+                  rgba(174, 204, 173, 0.8),
+                  rgba(180, 196, 184, 0.8)
                 ),
                 url(../../../../assets/foodFreedom.png);
               background-size: cover;
               background-position: center;
-              color: #fff;
+              color: black;
             "
           >
             <div class="itemDescription col-lg-12">
@@ -247,7 +273,7 @@
           <div class="modal-footer">
             <button
               type="button"
-              class="btn btn-primary"
+              class="read-btn"
               aria-label="Close"
               (click)="modal.dismiss('Cross click')"
             >
@@ -271,7 +297,7 @@
           <button
             type="button"
             (click)="openLg(content2)"
-            class="btn btn-primary"
+            class="read-btn read-more"
           >
             Read More
           </button>
@@ -281,26 +307,18 @@
         <ng-template #content3 let-modal>
           <div class="modal-header">
             <h4 class="modal-title text-center">Food Freedom</h4>
-            <button
-              type="button"
-              class="btn-danger btn"
-              aria-label="Close"
-              (click)="modal.dismiss('Cross click')"
-            >
-              CLOSE
-            </button>
           </div>
           <div
             class="modal-body d-flex justify-content-center"
             style="
               background: linear-gradient(
-                  rgba(9, 80, 7, 0.8),
-                  rgba(5, 61, 19, 0.8)
+                  rgba(174, 204, 173, 0.8),
+                  rgba(180, 196, 184, 0.8)
                 ),
                 url(../../../../assets/foodFreedom.jpg);
               background-size: cover;
               background-position: center;
-              color: #fff;
+              color: black;
             "
           >
             <div class="itemDescription col-lg-12">
@@ -345,7 +363,7 @@
           <div class="modal-footer">
             <button
               type="button"
-              class="btn-primary btn"
+              class="read-btn"
               aria-label="Close"
               (click)="modal.dismiss('Cross click')"
             >
@@ -358,7 +376,7 @@
             <img src="../../../../assets/foodFreedom.jpg" alt="" />
           </div>
           <div class="card-content">
-            <h3>Food Freedom</h3>
+            <h3>FOOD FREEDOM</h3>
             <p>
               Ever felt like a certain food has some kind of power over you ? Or
               a food that makes saying NO to it, next to impossible ? And have
@@ -370,7 +388,7 @@
           <button
             type="button"
             (click)="openLg(content3)"
-            class="btn btn-primary"
+            class="read-btn read-more"
           >
             Read More
           </button>
@@ -386,4 +404,3 @@
     </div>
   </div>
 </section>
-<app-testimonials></app-testimonials>
