@@ -6,7 +6,7 @@
     background-size: cover;
 }
 .section-home{
-    padding-bottom: 80px;
+    padding: 60px 60px 80px;
 }
 .section-thought{
     background-color: rgb(198, 214, 226);
@@ -23,9 +23,6 @@
 .guide-msg{
     padding: 20px;
     margin: 20px 0;
-}
-.section-home{
-    padding: 60px;
 }
 .get-started{
     margin: 20px;
@@ -149,4 +146,18 @@
 }
 .card-info{
     padding: 40px 0 40px 40px;
+}
+.home-testimonials {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+.home-testimonials .carousel-container{
+    max-width: 450px;
+}
+
+@media (max-width:767px){
+    .section-home{
+        padding: 10px;
+    }
 }
