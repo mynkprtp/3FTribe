@@ -14,5 +14,30 @@
     color: rgb(18, 56, 37);
 }
 .section-contact{
+    background-color: rgb(193, 224, 209);
+    background-color: rgb;
     padding: 60px;
+}
+.contact-container{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow:0 0px 10px rgb(59, 121, 90),0 0px 10px rgb(59, 121, 90), 0 0px 10px rgb(59, 121, 90),0 0px 10px rgb(59, 121, 90);
+}
+.contact-container .contact-content{
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    padding: 60px;
+    font-size: 20px;
+    background: linear-gradient(rgba(184, 180, 180, 0.45),rgba(104, 103, 103, 0.45)),url(../../../assets/contact-bg.png);
+    background-size:cover;
+    background-position: bottom;
+}
+.contact-container .contact-form{
+    padding: 20px;
+}
+.start-msg{
+    padding: 0 40px 40px;
+    text-align: center;
+    font-size: 22px;
+
 }

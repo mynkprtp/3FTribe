@@ -16,7 +16,7 @@
     font-weight: 700;
 }
 
-.part1, .part2, .part5{
+.part1, .part2, .part5, .part4{
     margin-bottom: 20px;
     display: flex;
     flex-direction: row;
@@ -34,7 +34,7 @@
     justify-content: center;
     flex-basis: 50%;
 }
-.bgpart1 img , .bgpart2 img, .part5 div img{
+.bgpart1 img , .bgpart2 img, .part5 div img, .part4 img{
     height: 500px;
 }
 
@@ -43,7 +43,7 @@
     padding: 20px;
     margin-bottom: 20px;
 }
-.part3 div, .part4 div{
+.part3 div, .part4 div:last-child{
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 10px;
