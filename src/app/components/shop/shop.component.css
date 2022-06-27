@@ -22,10 +22,11 @@
 }
 
 .section-shop a:hover{
-    transform: scale(1.03);
+    transform: scale(1.02);
 }
 .section-shop .imgContainer{
     background: url("../../../assets/822048.jpg");
+    box-shadow: 10px 10px 10px rgb(18, 56, 37);
     border-radius: 10px;
     display: flex;
     flex-direction: column;

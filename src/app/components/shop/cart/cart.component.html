@@ -1,8 +1,10 @@
 <section class="section-cart">
     <div class="cart">
-        <div *ngIf="!totalAmount" class="emptyCart">
-            CART IS EMPTY 
-            <a routerLink="/shop">Go n SHOP</a>
+        <div *ngIf="!totalAmount" class="emptyCart d-flex flex-column justify-content-center align-items-center">
+            <img src="../../../../assets/empty-cart.png" alt="" width="350px">
+            <h4>YOUR CART IS EMPTY</h4>
+            <p>Let's fill it with some items</p>
+            <a routerLink="/shop" class="cart-btn">Browse Items</a>
         </div>
         <div *ngIf="totalAmount" class="cart-items">
             <div class="row" *ngFor="let item of cartItems, let i = index">
