@@ -20,6 +20,9 @@ export class ShopComponent implements OnInit {
       });
   }
 
+  openConfirmModal(confirm:any){
+    this.modalService.open(confirm,{size:'xs'});
+  }
   addToCart(item:any){
     this.cartApi.addToCart(item);
   }

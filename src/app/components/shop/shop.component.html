@@ -1,6 +1,15 @@
 <section class="section-shop">
   <div class="row">
     <div class="col-lg-4 col-md-12 d-flex justify-content-center " *ngFor="let product of productList;let i = index ">
+      <ng-template #confirm let-modal>
+        <div class="modal-body">
+          <h4>Are you a WILDFIT graduate ?</h4>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-light" (click)="modal.dismiss('Cross click')">Not yet</button>
+            <button type="button" class="btn shop-btn" (click)="addToCart(product);modal.dismiss('Cross click');">Confirm & Add to cart</button>
+        </div>
+      </ng-template>
       <ng-template #content let-modal>
         <div class="modal-header">
           <h4 class="modal-title text-center">{{product.name}}</h4>
@@ -16,7 +25,7 @@
         <div class="modal-body d-flex justify-content-center">
           <div class="imgContainer col-lg-6">
             <div class="item d-flex justify-content-center">
-              <img src="../../../assets/shop/item{{i+1}}.jpg" width="280px" alt="" />
+              <img src="../../../assets/shop/item{{i+1}}.jpg" class="itemImage" alt="" />
             </div>
           </div>
           <div class="itemDescription col-lg-6">
@@ -28,8 +37,17 @@
         <div class="modal-footer">
           <h3>${{product.price}}</h3>
           <button
+            *ngIf="product.id==='livwfc'"
             type="button"
-            class="btn btn-light"
+            class="btn shop-btn"
+            (click)="openConfirmModal(confirm)"
+          >
+            Add to Cart
+          </button>
+          <button
+          *ngIf="product.id!=='livwfc'"
+            type="button"
+            class="btn shop-btn"
             (click)="addToCart(product)"
           >
             Add to Cart

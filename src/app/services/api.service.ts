@@ -25,19 +25,9 @@ export class ApiService {
       ]
     },
     {
-      id: 'livwfc',
-      name:"LIVING WILDFIT COACHING",
-      imageUrl: 'item2',
-      price: 27,
-      description: [
-        'Coaching support for clients who have completed the WILDFIT 90 challenge for the living WILDFIT phase',
-        'This is a monthly membership',
-        ]
-    },
-    {
       id: 'wf1o1p',
       name:"WILDFIT 90 1:1 PREMIUM COACHING WITH COACH ASEEMA",
-      imageUrl: 'item3',
+      imageUrl: 'item2',
       price: 1995,
       description: [
         'VIP One on One Coaching with Video',
@@ -56,6 +46,16 @@ export class ApiService {
         'Living WILDFIT Support after the 90 days for 2 months to ensure you continue the progress of the program into everyday life.'
         ]
     },
+    {
+      id: 'livwfc',
+      name:"LIVING WILDFIT COACHING",
+      imageUrl: 'item3',
+      price: 27,
+      description: [
+        'Coaching support for clients who have completed the WILDFIT 90 challenge for the living WILDFIT phase',
+        'This is a monthly membership',
+        ]
+    }
   ];
   getProduct() {
     return this.products;
