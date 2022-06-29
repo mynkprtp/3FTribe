@@ -33,11 +33,25 @@
     background-position: bottom;
 }
 .contact-container .contact-form{
-    padding: 20px;
+    padding: 40px;
 }
 .start-msg{
     padding: 0 40px 40px;
     text-align: center;
     font-size: 22px;
 
+}
+
+.book-btn{
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background-color: rgb(59, 121, 90);
+    box-shadow:0 0px 3px rgb(59, 121, 90),0 0px 3px rgb(59, 121, 90), 0 0px 3px rgb(59, 121, 90),0 0px 3px rgb(59, 121, 90);
+    transition: all 100ms ease-in-out;
+}
+.book-btn:hover{
+    box-shadow:0 0px 5px rgb(59, 121, 90),0 0px 5px rgb(59, 121, 90), 0 0px 5px rgb(59, 121, 90),0 0px 5px rgb(59, 121, 90);
 }

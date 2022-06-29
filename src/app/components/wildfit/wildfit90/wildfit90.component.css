@@ -2,20 +2,23 @@
     margin-top: 30px;
     text-align: center;
 }
-
+.section-wildfit90{
+    background-color: rgb(193, 224, 209);
+}
 .wildfit90{
     padding: 30px;
 }
 .whatisw90{
     background-color: aliceblue;
     padding: 20px !important;
-    border-radius: 20px;
+    /* border-radius: 20px;` */
 }
 .whatisw90 h3{
     margin-top: 0px;
 }
 
 .wildfit90 div:first-child{
+    background-color: #fff;
     padding: 5px 10px;
 }
 
@@ -163,7 +166,12 @@
     color: black; */
     box-shadow:0 0px 5px rgb(59, 121, 90),0 0px 5px rgb(59, 121, 90), 0 0px 5px rgb(59, 121, 90),0 0px 5px rgb(59, 121, 90);
 }
-
+.moneyBack{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
 @media (max-width:980px){
     .card-container{
         flex-direction: column;
