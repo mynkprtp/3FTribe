@@ -17,7 +17,6 @@
     display: flex;
     justify-content: center;
     padding: 20px;
-    flex-basis: 50%;
 }
 .introduce-img img{
     height: 480px;
