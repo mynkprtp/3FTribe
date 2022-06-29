@@ -5,33 +5,29 @@
   </button>
   <div class="collapse navbar-collapse" [class.collapse]="collapsed" (window:resize)="collapsed=true" >
     <ul class="navbar-nav ml-auto">
-      <li class="nav-link"><a routerLink="/home" routerLinkActive="active">Home</a></li>
-      <li class="nav-link"><a routerLink="/myStory" routerLinkActive="active">About</a></li>
+      <li class="nav-link"><a routerLink="/home" routerLinkActive="active" (click)="collapsed= !collapsed">Home</a></li>
+      <li class="nav-link"><a routerLink="/myStory" routerLinkActive="active" (click)="collapsed= !collapsed">About</a></li>
       <li class="nav-link dropdown">
         <a class="dropdown-toggle" routerLinkActive="active" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" (click)="show=!show">
           Wildfit
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown" [ngClass]="{show: show === true}">
-          <a class="nav-link" routerLink="/wildfit" (click)="show=!show">Wildfit</a>
-          <a class="nav-link" routerLink="/wildfit90" (click)="show=!show">Wildfit90</a>
-          <a class="nav-link" routerLink="/testimonials" (click)="show=!show">Testimonials</a>
-          <!-- <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a> -->
+          <a class="nav-link" routerLink="/wildfit" (click)="show=!show; collapsed= !collapsed">Wildfit</a>
+          <a class="nav-link" routerLink="/wildfit90" (click)="show=!show; collapsed= !collapsed">Wildfit90</a>
+          <a class="nav-link" routerLink="/testimonials" (click)="show=!show; collapsed= !collapsed">Testimonials</a>
         </div>
       </li>
-      <!-- <li class="nav-link"><a routerLink="/wildfit" routerLinkActive="active">Wildfit</a></li>
-      <li class="nav-link"><a routerLink="/wildfit90" routerLinkActive="active">Wildfit90</a></li> -->
-      <li class="nav-link"><a routerLink="/shop" routerLinkActive="active">Shop</a></li>
-      <li class="nav-link"><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+      <li class="nav-link"><a routerLink="/shop" routerLinkActive="active" (click)="collapsed= !collapsed">Shop</a></li>
+      <li class="nav-link"><a routerLink="/contact" routerLinkActive="active" (click)="collapsed= !collapsed">Contact</a></li>
     </ul>
     <span class="navbar-text">
       <div class="">
-        <a routerLink="/cart">
+        <a routerLink="/cart" (click)="collapsed= !collapsed">
           <i class="p-3 fal fa-shopping-cart">
             <span class="itemCount">{{totalItems}}</span>
           </i>
         </a>
-        <button class="btn btn-dark work-btn">Work with me</button>
+        <button class="btn btn-dark work-btn" routerLink="/contact" (click)="collapsed= !collapsed">Work with me</button>
       </div>
     </span>
   </div>
