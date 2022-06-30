@@ -24,7 +24,10 @@
     color: black; */
     box-shadow:0 0px 5px rgb(59, 121, 90),0 0px 5px rgb(59, 121, 90), 0 0px 5px rgb(59, 121, 90),0 0px 5px rgb(59, 121, 90);
 }
-
+.cart-header{
+    display: flex;
+    justify-content: space-between;
+}
 .cart-items{
     background-color: #fff;
     padding: 30px;

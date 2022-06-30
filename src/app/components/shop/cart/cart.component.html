@@ -7,9 +7,9 @@
             <a routerLink="/shop" class="cart-btn">Browse Items</a>
         </div>
         <div *ngIf="totalAmount" class="cart-items">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 mb-5">My Shopping Cart</div>
-                <a class="col-lg-6 col-md-6 col-sm-6 col-xs-6 mb-5" style="text-align:right; text-decoration: none; color: red; cursor: pointer;" (click)="removeAllProduct()">Remove All</a>
+            <div class="cart-header">
+                <div class="">My Shopping Cart</div>
+                <a class="" style="text-align:right; text-decoration: none; color: red; cursor: pointer;" (click)="removeAllProduct()">Remove All</a>
             </div>
             <div *ngFor="let item of cartItems, let i = index" class="bottom-border">
                 <div class="row col-lg-12 col-md-12">
