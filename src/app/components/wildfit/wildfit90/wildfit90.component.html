@@ -1,5 +1,6 @@
 <section class="section-wildfit90">
   <div class="wildfit90">
+    <div class="coverbg"></div>
     <div class="whatisw90">
       <h3 class="section-heading">What is WILDFIT 90 ?</h3>
       <div>
@@ -166,19 +167,19 @@
     <div class="card-container">
       <div class="card-outer">
         <ng-template #content1 let-modal>
-          <div class="modal-header">
+          <div class="modal-header" style="
+          background-color: rgb(5, 26, 2);
+          color: #fff;
+        ">
             <h4 class="modal-title text-center">OPTIMAL HEALTH</h4>
           </div>
           <div
             class="modal-body d-flex justify-content-center"
             style="
               background: linear-gradient(
-                  rgba(174, 204, 173, 0.8),
-                  rgba(180, 196, 184, 0.8)
-                ),
-                url(../../../../assets/meghan-holmes-buWcS7G1_28-unsplash.jpg);
-              background-size: cover;
-              background-position: center;
+                  rgba(174, 204, 173,1),
+                  rgba(180, 196, 184, 1)
+                );
               color: black;
             "
           >
@@ -198,7 +199,7 @@
           <div class="modal-footer">
             <button
               type="button"
-              class="read-btn btn btn-dark"
+              class="read-btn btn btn-success waves-effect"
               aria-label="Close"
               (click)="modal.dismiss('Cross click')"
             >
@@ -226,7 +227,8 @@
           <button
             type="button"
             (click)="openLg(content1)"
-            class="read-btn read-more"
+            class="btn btn-success waves-effect waves-light read-btn read-more"
+
           >
             Read More
           </button>
@@ -234,7 +236,10 @@
       </div>
       <div class="card-outer">
         <ng-template #content2 let-modal>
-          <div class="modal-header">
+          <div class="modal-header" style="
+          background-color: rgb(5, 26, 2);
+          color: #fff;
+        ">
             <h4 class="modal-title text-center">
               TRUST YOUR BODY & WIN IN LIFE
             </h4>
@@ -243,12 +248,9 @@
             class="modal-body d-flex justify-content-center"
             style="
               background: linear-gradient(
-                  rgba(174, 204, 173, 0.8),
-                  rgba(180, 196, 184, 0.8)
-                ),
-                url(../../../../assets/foodFreedom.png);
-              background-size: cover;
-              background-position: center;
+                  rgba(174, 204, 173,1),
+                  rgba(180, 196, 184, 1)
+                );
               color: black;
             "
           >
@@ -273,7 +275,7 @@
           <div class="modal-footer">
             <button
               type="button"
-              class="read-btn"
+              class="read-btn btn btn-success waves-effect"
               aria-label="Close"
               (click)="modal.dismiss('Cross click')"
             >
@@ -297,7 +299,7 @@
           <button
             type="button"
             (click)="openLg(content2)"
-            class="read-btn read-more"
+            class="btn btn-success waves-effect waves-light read-btn read-more"
           >
             Read More
           </button>
@@ -305,19 +307,19 @@
       </div>
       <div class="card-outer">
         <ng-template #content3 let-modal>
-          <div class="modal-header">
+          <div class="modal-header" style="
+          background-color: rgb(5, 26, 2);
+          color: #fff;
+        ">
             <h4 class="modal-title text-center">Food Freedom</h4>
           </div>
           <div
             class="modal-body d-flex justify-content-center"
             style="
               background: linear-gradient(
-                  rgba(174, 204, 173, 0.8),
-                  rgba(180, 196, 184, 0.8)
-                ),
-                url(../../../../assets/foodFreedom.jpg);
-              background-size: cover;
-              background-position: center;
+                  rgba(174, 204, 173,1),
+                  rgba(180, 196, 184, 1)
+                );
               color: black;
             "
           >
@@ -363,7 +365,7 @@
           <div class="modal-footer">
             <button
               type="button"
-              class="read-btn"
+              class="read-btn btn btn-success waves-effect"
               aria-label="Close"
               (click)="modal.dismiss('Cross click')"
             >
@@ -387,13 +389,21 @@
           </div>
           <button
             type="button"
-            (click)="openLg(content3)"
-            class="read-btn read-more"
+            (click)="openLarge(content3)"
+            class="btn btn-success waves-effect waves-light read-btn read-more"
           >
             Read More
           </button>
         </div>
       </div>
+    </div>
+    <div class="thought-area" data-aos-once="true" data-aos="fade-down" data-aos-duration="2000">
+      <h1>
+        <q>
+          He who has health has hope <br>and he who has hope, has everything.  
+        </q>
+        <p style="font-size: 22px; margin-top: 20px;">-Thomas Carlyle<p>
+      </h1>
     </div>
     <div class="moneyBack">
       <img

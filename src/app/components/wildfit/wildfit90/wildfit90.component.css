@@ -1,17 +1,32 @@
 .section-heading{
     margin-top: 30px;
     text-align: center;
+    font-size: 38px;
+    font-weight: 900;
+    /* font-family: 'Playfair Display', serif; */
 }
 .section-wildfit90{
-    background-color: rgb(193, 224, 209);
+    /* background-color: rgb(193, 224, 209); */
+    /* background-color: #A0D995; */
 }
 .wildfit90{
-    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.coverbg{
+    background:url(../../../../assets/bgs/pexels-fauxels-3184192.jpg);
+    width: 100%;
+    background-size: cover;
+    height: 450px;
+    /* padding: 30px 50px !important; */
+    margin: -30px -30px -50px;
 }
 .whatisw90{
     background-color: aliceblue;
-    padding: 20px !important;
-    /* border-radius: 20px;` */
+    width: 70%;
+    padding: 50px !important;
 }
 .whatisw90 h3{
     margin-top: 0px;
@@ -26,20 +41,24 @@
     text-align: center;
 }
 
+.howditwork{
+    padding: 30px;
+}
+
 .wildfit90 .howditwork .section-heading{
     padding: 30px 10px; 
 }
 
 .wildfit90 .howditwork .week-container {
     margin-bottom: 10px;
-    box-shadow: 0px 5px 10px rgb(59, 121, 90), 0 5px 10px rgb(59, 121, 90) ;
+    box-shadow: 0px 0 10px rgb(59, 121, 90), 0 0 10px rgb(59, 121, 90) ;
     border-radius: 12px;
     transition: all 200ms ease-in-out;
 }
 .wildfit90 .howditwork .week-container:hover{
     cursor: pointer;
     transform: scale(1.02);
-    box-shadow: 0px 5px 10px rgb(18, 56, 37), 0 5px 10px rgb(18, 56, 37) ;
+    box-shadow: 0px 0 10px rgb(18, 56, 37), 0 0 10px rgb(18, 56, 37) ;
 }
 .wildfit90 .howditwork .week-container h3{
     font-size: 20px;
@@ -96,7 +115,6 @@
 }
 /* ----------------------BENEFIT-------------------- */
 
-
 .card-container{
     display: flex;
     justify-content: center;
@@ -113,6 +131,7 @@
     background-color: #fff;
     box-shadow:0 3px 10px rgb(98, 141, 120),0 -3px 10px rgb(98, 141, 120), 0 3px 10px rgb(98, 141, 120),0 -3px 10px rgb(98, 141, 120);
     transition: all 100ms ease-in;
+    border-radius: 5px;
 }
 .card-inner:hover{
     transform: scale(1.03);
@@ -142,6 +161,7 @@
 .card-content h3{
     text-align: center;
     font-size:18px;
+    font-weight: 700;
 }
 .modal-header,.modal-footer{
     text-align: center;
@@ -150,21 +170,22 @@
 .modal-header{
     justify-content: center;
 }
-
 .read-btn{
     padding: 10px 20px;
-    color: #fff;
-    border-radius: 20px;
-    outline: none;
-    border: none;
-    background-color: rgb(59, 121, 90);
-    box-shadow:0 0px 3px rgb(59, 121, 90),0 0px 3px rgb(59, 121, 90), 0 0px 3px rgb(59, 121, 90),0 0px 3px rgb(59, 121, 90);
-    transition: all 150ms ease-in-out;
 }
-.read-btn:hover{
-    /* background-color:rgba(177, 199, 181, 0.7);
-    color: black; */
-    box-shadow:0 0px 5px rgb(59, 121, 90),0 0px 5px rgb(59, 121, 90), 0 0px 5px rgb(59, 121, 90),0 0px 5px rgb(59, 121, 90);
+
+.thought-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px -60px;
+    height: 280px;
+    background:linear-gradient(rgba(255, 255, 255, 0.65),rgba(255, 255, 255, 0.65)), url(../../../../assets/bgs/pexels-ella-olsson-1640777.jpg);
+}
+.thought-area h1{
+    margin-top: 20px;
+    font-size: 36px;
+    text-align: center;
 }
 .moneyBack{
     display: flex;

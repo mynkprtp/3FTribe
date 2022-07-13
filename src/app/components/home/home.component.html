@@ -1,20 +1,25 @@
 <section class="section-home">
-  <div class="get-started">
-    <h1>Health</h1>
-    <h1 class="amperh1"><span class="amper">&</span> Fitness</h1>
-    <p>always be ready to challenge yourself</p>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt
-      voluptate recusandae itaque explicabo facere.
-    </p>
-    <div class="get-started-btn d-flex">
-      <input type="text" placeholder="Enter your email to get started" />
-      <button class="btn btn-dark">Get Started</button>
+  <div class="home-header">
+    <div class="get-started">
+      <h1>Health</h1>
+      <h1 class="amperh1"><span class="amper">&</span> Fitness</h1>
+      <p>always be ready to challenge yourself</p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt
+        voluptate recusandae itaque explicabo facere.
+      </p>
+      <div class="get-started-btn d-flex">
+        <input type="text" placeholder="Enter your email to get started" />
+        <button class="btn btn-dark">Get Started</button>
+      </div>
     </div>
   </div>
-  <div></div>
-  <div class="about-me"></div>
+  <!-- <div></div> -->
+  <div class="about-me">
+    <app-about></app-about>
+  </div>
   <div class="home-testimonials">
+    <!-- <h1 class="test-heading">What Clients have to say...</h1> -->
     <div class="carousel-container">
       <ngb-carousel *ngIf="images">
         <ng-template ngbSlide *ngFor="let i of [1, 2, 3]">

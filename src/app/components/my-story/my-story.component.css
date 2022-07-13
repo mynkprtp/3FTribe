@@ -1,11 +1,24 @@
 .section-aboutMe{
     padding: 60px;
-    background-color: rgb(193, 224, 209);
 }
 .section-aboutMe .intro {
+    background: url(../../../assets/bgs/yoal-desurmont-jqgsM3B9Fpo-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    height: 150px;
+    margin: -60px -60px;
     margin-bottom: 30px;
 }
 .section-aboutMe .intro h1{
+    font-size: 36px;
+    text-align: center;
+}
+.thought-area h1{
+    margin-top: 20px;
     font-size: 36px;
     text-align: center;
 }
@@ -15,42 +28,56 @@
     text-align: center;
     color: rgb(12, 39, 27);
     font-weight: 700;
+    margin-bottom: 20px;
 }
-
-.part1, .part2, .part5, .part4{
+.part1, .part2, .part3{
     margin-bottom: 20px;
     display: flex;
     flex-direction: row;
-    background-image: url("../../../assets/822048.jpg");
+    justify-content: space-between;
+    background-image: url("../../../assets/bgs/6056344.jpg");
+    background-size: cover;
     padding: 20px;
 }
-.part1 div:first-child , .part2 div:nth-child(2){
+.part3{
+    flex-direction: column;
+}
+.part1{
+    background-image: url("../../../assets/bgs/16056344.jpg");
+    background-size: cover;
+}
+.part4{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    background-image: url("../../../assets/bgs/6056344.jpg");
+    background-size: cover;
+}
+
+.part5{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+}
+.part-content{
+    background-color: rgba(255, 255, 255, 0.7);
     padding: 40px;
     flex-basis: 50%;
-    background-color: rgba(255, 255, 255, 0.7);
     border-radius: 10px;
+    line-height: 30px;
 }
-.bgpart1 , .bgpart2, .part5 div, .bgpart4{
+.bgpart1 , .bgpart2, .bgpart4{
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
-    flex-basis: 50%;
 }
-.part1 img , .part2 img, .part5 img{
+.bgpart2, .bgpart4{
+    justify-content: start;
+}
+.part1 img , .part2 img,.part4 img, .part5 img{
     width: 400px;
-}
-.part4 img{
-    width: 300px;
-}
-.part3 , .part4{
-    background-image: url("../../../assets/822048.jpg");
-    padding: 20px;
-    margin-bottom: 20px;
-}
-.part3 div, .part4 div:last-child{
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 10px;
 }
 .part3 div ul{
     padding: 0 20px 20px;
@@ -77,21 +104,51 @@
     .myStory > h1:first-child{
         font-size: 40px;
     }
-    .section-aboutMe .intro h1{
+    .section-aboutMe .intro h1, .thought-area h1{
         font-size: 24px;
     }
-    .part1 img , .part2 img, .part5 img{
+    .part1 img , .part2 img, .part4 img, .part5 img{
         width: 300px;
     }
     .section-aboutMe{
         padding: 30px;
     }
+    .part-content{
+        line-height: 26px;
+    }
 }
 @media (max-width:767px){
-    .section-aboutMe .intro h1{
+    .section-aboutMe .intro h1, .thought-area h1{
         font-size: 20px;
     }
-    .part1, .part2, .part5, .part4{
+    .part1{
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .part2, .part5, .part4{
+        align-items: center;
         flex-direction: column;
+    }
+    .part4{
+        align-items: center;
+    }
+    .bgpart1, .bgpart2, .bgpart4{
+        margin-bottom: 20px;
+        justify-content: center;
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+        overflow: hidden;
+    }
+    .bgpart1 img, .bgpart2 img, .bgpart4 img{
+        display: flex;
+        justify-content: center;
+    }
+    .part5{
+        justify-content: center;
+    }
+    .part5 div{
+        display: flex;
+        justify-content: center;
     }
 }

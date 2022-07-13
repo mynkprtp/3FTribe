@@ -22,6 +22,8 @@ export class Wildfit90Component implements OnInit {
   openLg(content:any) {
     this.modalService.open(content, {scrollable:true,backdropClass:'blurred-background',centered:true});
   }
-
+  openLarge(content:any){
+    this.modalService.open(content,{size:'lg',scrollable:true, backdropClass:'blurred-background', centered:true});
+  }
 
 }

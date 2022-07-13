@@ -1,5 +1,5 @@
 .section-cart{
-    background-color: rgb(193, 224, 209);
+    /* background-color: rgb(193, 224, 209); */
     padding: 40px;
 }
 .cart-img{
@@ -25,8 +25,11 @@
     box-shadow:0 0px 5px rgb(59, 121, 90),0 0px 5px rgb(59, 121, 90), 0 0px 5px rgb(59, 121, 90),0 0px 5px rgb(59, 121, 90);
 }
 .cart-header{
-    display: flex;
-    justify-content: space-between;
+    padding-bottom: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 60px;
+    text-align: center;
+    color: rgb(18, 56, 37);
 }
 .cart-items{
     background-color: #fff;
