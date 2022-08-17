@@ -1,18 +1,3 @@
-.contact{
-    margin-top: -120px;
-    width: 100%;
-    height: 280px;
-    background:linear-gradient(rgba(255, 255, 255, 0.45),rgba(255, 255, 255, 0.45)),url("../../../assets/822048.jpg");
-    background-size: cover;
-}
-
-.contact h1{
-    padding-top: 150px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 60px;
-    text-align: center;
-    color: rgb(18, 56, 37);
-}
 .section-contact{
     /* background-color: rgb(193, 224, 209); */
     padding: 60px;
@@ -38,19 +23,30 @@
     padding: 0 40px 40px;
     text-align: center;
     font-size: 22px;
-
 }
-
-.book-btn{
+.start-msg h1{
+    font-size: 28px;
+}
+.book-btn, .submit-btn{
     padding: 10px 20px;
     color: #fff;
     border-radius: 20px;
     outline: none;
     border: none;
-    background-color: rgb(59, 121, 90);
+    max-width: 220px;
+    background-color: #1e7e34;
     box-shadow:0 0px 3px rgb(59, 121, 90),0 0px 3px rgb(59, 121, 90), 0 0px 3px rgb(59, 121, 90),0 0px 3px rgb(59, 121, 90);
     transition: all 100ms ease-in-out;
 }
-.book-btn:hover{
-    box-shadow:0 0px 5px rgb(59, 121, 90),0 0px 5px rgb(59, 121, 90), 0 0px 5px rgb(59, 121, 90),0 0px 5px rgb(59, 121, 90);
+.submit-btn{
+    width: 120px;
+}
+.book-btn:hover, .submit-btn:active{
+    background-color: #28a745;
+}
+
+@media (max-width:767px) {
+    .section-contact,.contact-container .contact-content, .contact-form{
+        padding: 20px;
+    }
 }

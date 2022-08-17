@@ -1,75 +1,75 @@
 .section-heading{
+    color: rgb(18, 56, 37);
     text-align: center;
+    font-size: 40px;
+    font-weight: 550;
+    letter-spacing: 10px;
+    margin-bottom: 20px;
 }
 
 .section-intro{
-    /* background-color: rgb(193, 224, 209); */
     padding: 60px;
 }
 .introduce{
     margin-bottom: 20px;
     display: flex;
     flex-direction: row;
-    background-color: whitesmoke;
-    /* background-image: url("../../../assets/.jpg"); */
-    padding: 30px;
-}
-.introduce-img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background: url(../../../assets/bgs/greenbg.jpg);
+    background-size: cover;
     padding: 20px;
-}
-.introduce-img img{
-    height: 420px;
+    border-radius: 8px;
 }
 
 .introduce-content{
-    padding: 40px;
-}
-
-.faq-content{
-    background-color: aliceblue;
-    padding: 40px;
-}
-.icbottom{
-    padding: 0 20px;
-}
-.introduce-content h3{
-    font-size: 32px;
-    font-weight: 700;
-    margin-bottom: 30px;
-}
-.introduce-content p{
-    font-size: 14px;
-}
-
-.section-intro .description{
-    /* margin: 50px; */
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 10px 10px #000;
     padding: 20px;
+    border-radius: 8px;
+}
+.introduce-content img{
+    height: 450px; 
+    float:left; 
+    margin-right: 20px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+.section-intro .description{
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 10px 10px #000;
+    /* color: #fff; */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 .limitTextHeight {
     height: 285px;
     overflow: hidden;
 }
 .section-intro .description h3{
-    display: flex;
-    justify-content: center;
+    text-align: center;
     margin-bottom: 30px;
     font-size: 38px;
-    font-weight: 900;
-}
-.section-intro .description p{
-    font-size: 16px;
+    /* font-weight: 900; */
 }
 
 .section-intro .video{
-    display: flex;
-    justify-content: center;
+    float: right;
+    overflow: hidden;
 }
 
-@media (max-width:991px){
+@media (max-width:767px){
     .section-intro{
         padding: 20px;
+    }
+    .introduce-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+    }
+    .introduce-content img{
+        float: none;
+        height: 380px;
+        margin: 0 0 20px;
     }
 }

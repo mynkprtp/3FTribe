@@ -1,0 +1,16 @@
+.faq{
+    padding: 60px;
+}
+.faq-content{
+    background: rgba(240,248,255,0.8);
+    box-shadow: 0 5px 15px #000;
+    border-radius: 8px;
+    padding: 40px;
+}
+.faq h3{
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 10px;
+    margin-bottom: 20px;
+    color: rgb(18, 56, 37);
+}

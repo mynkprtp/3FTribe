@@ -9,6 +9,7 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import {AngularFireDatabaseModule} from '@angular/fire/compat/database'
 import {HttpClientModule} from '@angular/common/http'
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
+import { HashLocationStrategy, LocationStrategy  } from '@angular/common';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -26,6 +27,10 @@ import { MyStoryComponent } from './components/my-story/my-story.component';
 import { environment } from 'environments/environment';
 import { CartComponent } from './components/shop/cart/cart.component';
 import { Wildfit90Component } from './components/wildfit/wildfit90/wildfit90.component';
+import { SuccessComponent } from './components/shop/success/success.component';
+import { FailureComponent } from './components/shop/failure/failure.component';
+import { StripeComponent } from './components/shop/stripe/stripe.component';
+import { FaqComponent } from './components/wildfit/faq/faq.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +47,10 @@ import { Wildfit90Component } from './components/wildfit/wildfit90/wildfit90.com
     MyStoryComponent,
     CartComponent,
     Wildfit90Component,
+    SuccessComponent,
+    FailureComponent,
+    StripeComponent,
+    FaqComponent,
   ],
   imports: [
     BrowserModule,
@@ -57,7 +66,9 @@ import { Wildfit90Component } from './components/wildfit/wildfit90/wildfit90.com
     HttpClientModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [
+    {provide : LocationStrategy , useClass: HashLocationStrategy}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

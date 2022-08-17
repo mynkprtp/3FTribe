@@ -167,23 +167,18 @@
     <div class="card-container">
       <div class="card-outer">
         <ng-template #content1 let-modal>
-          <div class="modal-header" style="
-          background-color: rgb(5, 26, 2);
-          color: #fff;
-        ">
-            <h4 class="modal-title text-center">OPTIMAL HEALTH</h4>
-          </div>
           <div
             class="modal-body d-flex justify-content-center"
             style="
               background: linear-gradient(
-                  rgba(174, 204, 173,1),
-                  rgba(180, 196, 184, 1)
-                );
-              color: black;
+                  rgba(0, 0, 0, 0.7),
+                  rgba(0, 0, 0, 0.7)
+                ), url(../../../../assets/bgs/mw0321.jpg); background-size: cover;
+              color: #fff;
             "
           >
-            <div class="itemDescription col-lg-12">
+            <div class="itemDescription" style="padding:30px;">
+              <h3>OPTIMAL HEALTH</h3>
               <P>
                 WILDFIT is not a diet, it is a way of life that helps you
                 achieve optimal health. When our body achieves optimal health,
@@ -194,17 +189,15 @@
                 athlete. You gain more confidence in yourself and making good
                 food decisions becomes organic and requires NO WILLPOWER!
               </P>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button
+              <button
               type="button"
               class="read-btn btn btn-success waves-effect"
               aria-label="Close"
               (click)="modal.dismiss('Cross click')"
-            >
+              >
               Read Less
-            </button>
+              </button>
+            </div>
           </div>
         </ng-template>
         <div class="card-inner">
@@ -221,7 +214,7 @@
               optimal health. When our body achieves optimal health, diseases,
               health conditions, allergies, body aches/pains etc start to
               disappear. If you are carrying additional weight, that starts to
-              come off. If want to
+              come off.
             </p>
           </div>
           <button
@@ -236,25 +229,18 @@
       </div>
       <div class="card-outer">
         <ng-template #content2 let-modal>
-          <div class="modal-header" style="
-          background-color: rgb(5, 26, 2);
-          color: #fff;
-        ">
-            <h4 class="modal-title text-center">
-              TRUST YOUR BODY & WIN IN LIFE
-            </h4>
-          </div>
           <div
             class="modal-body d-flex justify-content-center"
             style="
               background: linear-gradient(
-                  rgba(174, 204, 173,1),
-                  rgba(180, 196, 184, 1)
-                );
-              color: black;
+                  rgba(0, 0, 0, 0.7),
+                  rgba(0, 0, 0, 0.7)
+                ), url(../../../../assets/bgs/mw0321.jpg); background-size: cover;
+              color: #fff;
             "
           >
-            <div class="itemDescription col-lg-12">
+            <div class="itemDescription" style="padding:30px;">
+              <h3>TRUST YOUR BODY & WIN IN LIFE</h3>
               <P>
                 With WILDFIT, you learn to listen to your body. Our bodies are
                 magnificent machines that have all the wisdom in it to give us
@@ -270,17 +256,15 @@
                 with your loved ones, create healthy boundaries and succeed in
                 every area of life!
               </P>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button
+              <button
               type="button"
               class="read-btn btn btn-success waves-effect"
               aria-label="Close"
               (click)="modal.dismiss('Cross click')"
-            >
+              >
               Read Less
-            </button>
+              </button>
+            </div>
           </div>
         </ng-template>
         <div class="card-inner">
@@ -307,23 +291,18 @@
       </div>
       <div class="card-outer">
         <ng-template #content3 let-modal>
-          <div class="modal-header" style="
-          background-color: rgb(5, 26, 2);
-          color: #fff;
-        ">
-            <h4 class="modal-title text-center">Food Freedom</h4>
-          </div>
           <div
             class="modal-body d-flex justify-content-center"
             style="
               background: linear-gradient(
-                  rgba(174, 204, 173,1),
-                  rgba(180, 196, 184, 1)
-                );
-              color: black;
+                  rgba(0, 0, 0, 0.7),
+                  rgba(0, 0, 0, 0.7)
+                ), url(../../../../assets/bgs/mw0321.jpg); background-size: cover;
+              color: #fff;
             "
           >
-            <div class="itemDescription col-lg-12">
+            <div class="itemDescription" style="padding: 30px;">
+              <h3>FOOD FREEDOM</h3>
               <p>
                 Ever felt like a certain food has some kind of power over you ?
                 Or a food that makes saying NO to it, next to impossible ? And
@@ -342,7 +321,7 @@
                 a lifetime. At the end of 90 days, these are some of things my
                 clients say :
               </p>
-              <ul>
+              <ul style="margin-left:20px;">
                 <li>"I no longer have any sugar cravings"</li>
                 <li>
                   "Not sure why I liked eating ice cream so much, its GROSS!"
@@ -360,17 +339,18 @@
                 anymore. WILDFIT will help you reach a level of food freedom
                 which is organic and does not require any willpower.
               </p>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button
+              <button
               type="button"
               class="read-btn btn btn-success waves-effect"
               aria-label="Close"
               (click)="modal.dismiss('Cross click')"
-            >
+              >
               Read Less
-            </button>
+              </button>
+              <div style="visibility:hidden;">
+                .
+              </div>
+            </div>
           </div>
         </ng-template>
         <div class="card-inner">
@@ -384,7 +364,7 @@
               a food that makes saying NO to it, next to impossible ? And have
               you ever realized that once you have those foods, do you feel
               guilty ? So if these foods are so good, why do they make you feel
-              guilty ? Fair question, right ?
+              guilty ? 
             </p>
           </div>
           <button
@@ -398,19 +378,12 @@
       </div>
     </div>
     <div class="thought-area" data-aos-once="true" data-aos="fade-down" data-aos-duration="2000">
-      <h1>
+      <h3>
         <q>
           He who has health has hope <br>and he who has hope, has everything.  
         </q>
         <p style="font-size: 22px; margin-top: 20px;">-Thomas Carlyle<p>
-      </h1>
-    </div>
-    <div class="moneyBack">
-      <img
-        src="../../../../assets/moneyback.png"
-        alt="MONEY BACK GUARANTEE"
-        height="550px"
-      />
+      </h3>
     </div>
   </div>
 </section>

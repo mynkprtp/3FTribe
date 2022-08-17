@@ -1,13 +1,7 @@
 .section-heading{
-    margin-top: 30px;
     text-align: center;
-    font-size: 38px;
-    font-weight: 900;
-    /* font-family: 'Playfair Display', serif; */
-}
-.section-wildfit90{
-    /* background-color: rgb(193, 224, 209); */
-    /* background-color: #A0D995; */
+    font-size: 34px;
+    font-weight: 550;
 }
 .wildfit90{
     display: flex;
@@ -16,22 +10,19 @@
     align-items: center;
 }
 .coverbg{
-    background:url(../../../../assets/bgs/pexels-fauxels-3184192.jpg);
+    background:url(../../../../assets/bgs/pexels-nathan-cowley-1153369.jpg);
     width: 100%;
     background-size: cover;
     height: 450px;
-    /* padding: 30px 50px !important; */
     margin: -30px -30px -50px;
 }
 .whatisw90{
-    background-color: aliceblue;
+    background-color: rgba(255,255,255,0.8);
+    box-shadow: 0 8px 20px #000;
     width: 70%;
-    padding: 50px !important;
+    border-radius: 5px;
+    padding: 40px;
 }
-.whatisw90 h3{
-    margin-top: 0px;
-}
-
 .wildfit90 div:first-child{
     background-color: #fff;
     padding: 5px 10px;
@@ -50,9 +41,10 @@
 }
 
 .wildfit90 .howditwork .week-container {
+    position: relative;
     margin-bottom: 10px;
     box-shadow: 0px 0 10px rgb(59, 121, 90), 0 0 10px rgb(59, 121, 90) ;
-    border-radius: 12px;
+    border-radius: 8px;
     transition: all 200ms ease-in-out;
 }
 .wildfit90 .howditwork .week-container:hover{
@@ -61,12 +53,11 @@
     box-shadow: 0px 0 10px rgb(18, 56, 37), 0 0 10px rgb(18, 56, 37) ;
 }
 .wildfit90 .howditwork .week-container h3{
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 10px;
     font-weight: 500;
 }
 .wildfit90 .howditwork .week-container > p{
-    font-size: 13px;
     margin-bottom: 8px;
 }
 .wildfit90 .howditwork .week-container .week-content{
@@ -76,8 +67,13 @@
 }
 .wildfit90 .howditwork .week-container .week-content p{
     transition: all 0.5s 0s ease-in;
+    margin-left: 150px;
 }
 .wildfit90 .howditwork .week-container .week{
+    position: absolute;
+    z-index: 21;
+    top: 10px;
+    bottom: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,6 +81,19 @@
     border-radius: 10px;
     width: 150px;
 }
+
+@media (max-width:664px){
+    .wildfit90 .howditwork .week-container .week{
+        width: 110px;
+    }
+    .wildfit90 .howditwork .week-container .week-content{
+        margin-left: 110px;
+    }   
+    .wildfit90 .howditwork .week-container .week-content p{
+        margin-left: 0px;
+    }
+}
+
 .drop-btn{
     z-index:50;
     position: absolute;
@@ -92,8 +101,13 @@
     right: 8px;
     width: 30px;
     height: 30px;
-    /* background-color:#000; */
     border-radius: 50%;
+}
+
+@media (max-width:664px){
+    .drop-btn{
+        right: -4px;
+    }
 }
 .full-height{
     height: auto;
@@ -131,16 +145,13 @@
     background-color: #fff;
     box-shadow:0 3px 10px rgb(98, 141, 120),0 -3px 10px rgb(98, 141, 120), 0 3px 10px rgb(98, 141, 120),0 -3px 10px rgb(98, 141, 120);
     transition: all 100ms ease-in;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 .card-inner:hover{
     transform: scale(1.03);
     box-shadow:0 0px 10px rgb(59, 121, 90),0 0px 10px rgb(59, 121, 90), 0 0px 10px rgb(59, 121, 90),0 0px 10px rgb(59, 121, 90);
 }
 
-.card-inner p{
-    font-size: 14px;
-}
 .card-image{
     height: 150px;
     width: 100%;
@@ -152,16 +163,26 @@
 .card-content{
     padding: 20px;
 }
-.readButton{
-    padding: 0 20px;
+.read-btn{
+    border: none;
+    outline: none;
+    background-color: #1e7e34;
+    width:150px;
+    padding: 8px 20px;
+    border-radius: 20px;
+}
+.read-btn:active, .read-btn:hover{
+    border: none;
+    outline: none;
+    background-color: #28a745;
 }
 .read-more{
     margin: 20px;
 }
 .card-content h3{
     text-align: center;
-    font-size:18px;
-    font-weight: 700;
+    font-size:24px;
+    font-weight: 500;
 }
 .modal-header,.modal-footer{
     text-align: center;
@@ -170,40 +191,34 @@
 .modal-header{
     justify-content: center;
 }
-.read-btn{
-    padding: 10px 20px;
-}
 
 .thought-area{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 40px -60px;
+    margin: 40px 0;
     height: 280px;
-    background:linear-gradient(rgba(255, 255, 255, 0.65),rgba(255, 255, 255, 0.65)), url(../../../../assets/bgs/pexels-ella-olsson-1640777.jpg);
+    background:linear-gradient(rgba(255, 255, 255, 0.65),rgba(255, 255, 255, 0.65)), url(../../../../assets/bgs/pexels-ella-olsson.jpg);
+    background-size: cover;
 }
-.thought-area h1{
+.thought-area h3{
     margin-top: 20px;
-    font-size: 36px;
     text-align: center;
 }
-.moneyBack{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 20px;
-}
+
 @media (max-width:980px){
     .card-container{
         flex-direction: column;
-    }
-    .card-outer{
-        width: 450px;
     }
     .card-content{
         padding-bottom:0 ;
     }
     .btn-primary{
         margin-top: 0px;
+    }
+}
+@media (max-width:664px){
+    .card-outer{
+        width: 320px;
     }
 }

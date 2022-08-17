@@ -1,12 +1,15 @@
+<div class="announcement"><div class="ann-text">🎉🎉 Upcoming <q><b>WILDFIT90 Challenge</b></q> starting <b>22nd August!! </b> <a href="https://calendly.com/3ftribewithcoachaseema/30min">Book your Free discovery call now !!</a> 🎉🎉
+</div>
+</div>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" routerLink="/home"><img src="../../../../assets/3ft.png" width="120px" alt=""></a>
+  <a class="navbar-brand" routerLink="/home"><img src="../../../../assets/newLogo.png" width="120px" alt="3FTribe_Flow-Fit-Free" title="3FTribe_Flow-Fit-Free"></a>
   <button class="navbar-toggler" type="button" (click)="collapsed= !collapsed">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" [class.collapse]="collapsed" (window:resize)="collapsed=true" >
     <ul class="navbar-nav ml-auto">
-      <li class="nav-link"><a routerLink="/home" routerLinkActive="active" (click)="collapsed= !collapsed">Home</a></li>
-      <li class="nav-link"><a routerLink="/myStory" routerLinkActive="active" (click)="collapsed= !collapsed">About</a></li>
+      <li class="nav-link"><a routerLink="/home" routerLinkActive="active" (click)="show=false; collapsed= !collapsed">Home</a></li>
+      <li class="nav-link"><a routerLink="/myStory" routerLinkActive="active" (click)="show=false; collapsed= !collapsed">About</a></li>
       <li class="nav-link dropdown">
         <a class="dropdown-toggle" routerLinkActive="active" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" (click)="show=!show">
           Wildfit
@@ -15,19 +18,20 @@
           <a class="nav-link" routerLink="/wildfit" (click)="show=!show; collapsed= !collapsed">Wildfit</a>
           <a class="nav-link" routerLink="/wildfit90" (click)="show=!show; collapsed= !collapsed">Wildfit90</a>
           <a class="nav-link" routerLink="/testimonials" (click)="show=!show; collapsed= !collapsed">Testimonials</a>
+          <a class="nav-link" routerLink="/wildfit-faq" (click)="show=!show; collapsed= !collapsed">FAQ</a>
         </div>
       </li>
-      <li class="nav-link"><a routerLink="/shop" routerLinkActive="active" (click)="collapsed= !collapsed">Shop</a></li>
-      <li class="nav-link"><a routerLink="/contact" routerLinkActive="active" (click)="collapsed= !collapsed">Contact</a></li>
+      <li class="nav-link"><a routerLink="/shop" routerLinkActive="active" (click)="show=false; collapsed= !collapsed">Shop</a></li>
+      <!-- <li class="nav-link"><a routerLink="/contact" routerLinkActive="active" (click)="collapsed= !collapsed">Contact</a></li> -->
     </ul>
     <span class="navbar-text">
       <div class="">
-        <a routerLink="/cart" (click)="collapsed= !collapsed">
+        <!-- <a routerLink="/cart" (click)="show=false; collapsed= !collapsed">
           <i class="p-3 fal fa-shopping-cart">
             <span class="itemCount">{{totalItems}}</span>
           </i>
-        </a>
-        <button class="btn btn-dark work-btn" routerLink="/contact" (click)="collapsed= !collapsed">Work with me</button>
+        </a> -->
+        <button class="btn btn-dark work-btn" routerLink="/contact" (click)="show=false; collapsed= !collapsed">Work with me</button>
       </div>
     </span>
   </div>

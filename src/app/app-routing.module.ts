@@ -9,6 +9,9 @@ import { TestimonialsComponent } from './components/testimonials/testimonials.co
 import { WildfitComponent } from './components/wildfit/wildfit.component';
 import { MyStoryComponent } from './components/my-story/my-story.component';
 import { Wildfit90Component } from './components/wildfit/wildfit90/wildfit90.component';
+import { SuccessComponent } from './components/shop/success/success.component';
+import { FailureComponent } from './components/shop/failure/failure.component';
+import { FaqComponent } from './components/wildfit/faq/faq.component';
 
 const routes: Routes = [
   {path:'about',component:AboutComponent},
@@ -16,7 +19,10 @@ const routes: Routes = [
   {path:'myStory',component:MyStoryComponent},
   {path:'home',component:HomeComponent},
   {path:'wildfit',component:WildfitComponent},
+  {path:'wildfit-faq',component:FaqComponent},
   {path:'shop',component:ShopComponent},
+  {path:'success',component:SuccessComponent},
+  {path:'failure',component:FailureComponent},
   {path:'cart',component:CartComponent},
   {path:'contact',component:ContactComponent},
   {path:'testimonials',component:TestimonialsComponent},

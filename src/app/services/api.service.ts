@@ -26,7 +26,7 @@ export class ApiService {
     },
     {
       id: 'wf1o1p',
-      name:"WILDFIT 90 1:1 PREMIUM COACHING WITH COACH ASEEMA",
+      name:"WILDFIT 90 1:1 PREMIUM COACHING",
       imageUrl: 'item2',
       price: 1995,
       description: [

@@ -12,11 +12,11 @@
         <div *ngIf="totalAmount" class="cart-items">
             <div *ngFor="let item of cartItems, let i = index" class="bottom-border">
                 <div class="row col-lg-12 col-md-12">
-                    <div class="col-lg-2 col-md-2 col-sm-2 cart-img d-flex justify-content-center">
+                    <!-- <div class="col-lg-2 col-md-2 col-sm-2 cart-img d-flex justify-content-center">
                         <img src="../../../../assets/shop/{{item.imageUrl}}.jpg" alt="">
-                    </div>
-                    <div class="col-lg-5 col-md-5 col-sm-5" style="text-align: center;">{{item.name}}</div>
-                    <div class="col-lg-2 col-md-2 col-sm-2">
+                    </div> -->
+                    <div class="col-lg-6 col-md-6 col-sm-6" >{{item.name}}</div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
                         <div class="d-flex flex-row justify-content-center">
                             <div class="reduce btn" (click)="redQuantity(item)">-</div>
                             <div class="btn" style="border-radius: 10px;cursor:default;">{{item.quantity}}</div>
@@ -31,12 +31,11 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-6 col-md-6"></div>
-                <div class="col-lg-6 col-md-6">
+            <div class="d-flex justify-content-end">
+                <div class="">
                     <div class="totalAmount">
-                        <h4>Total Amount:</h4>
-                        <h4>$ {{totalAmount}}</h4>
+                        <h3>Total Amount:</h3>
+                        <h3>$ {{totalAmount}}</h3>
                     </div>
                     <div class="d-flex justify-content-center">
                         <div class="checkout btn btn-dark">Checkout</div>

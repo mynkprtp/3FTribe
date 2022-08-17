@@ -1,5 +1,6 @@
 .section-aboutMe{
     padding: 60px;
+    font-family: 'Roboto', sans-serif;
 }
 .section-aboutMe .intro {
     background: url(../../../assets/bgs/yoal-desurmont-jqgsM3B9Fpo-unsplash.jpg);
@@ -7,51 +8,81 @@
     background-position: center;
     display: flex;
     justify-content: center;
+    text-align: center;
     align-items: center;
     color: #fff;
-    height: 150px;
-    margin: -60px -60px;
-    margin-bottom: 30px;
+    height: 120px;
+    margin: -60px;
+    margin-bottom: 60px;
+    padding: 10px;
 }
-.section-aboutMe .intro h1{
-    font-size: 36px;
+
+.thought-area h3{
     text-align: center;
+    margin-top: 24px;
 }
-.thought-area h1{
-    margin-top: 20px;
-    font-size: 36px;
-    text-align: center;
+
+.myStoryCards{
+    position: relative;
 }
-.myStory > h1:first-child{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 60px;
-    text-align: center;
-    color: rgb(12, 39, 27);
-    font-weight: 700;
+.myStoryCards .col-md-6, .myStoryCards .col-lg-3, .myStoryCards .col-sm-6{
+    padding: 0;
+}
+.outer-conten{
+    width: 350px;
+    height: 560px;
+    position: relative;
+    transition: all 200ms ease-in-out;
     margin-bottom: 20px;
+    border-radius: 10px;
 }
-.part1, .part2, .part3{
+
+.outer-conten:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+    z-index: 21;
+    transition: all 200ms ease-in-out;
+}
+.conten{
+    height: 100%;
+    background: rgba(0,0,0,.7);
+    padding: 20px;
+    border-radius: 10px;
+    padding-bottom: 50px;
+    font-size: 14px;
+    color: #fff;
+    opacity: 0;
+}
+.outer-conten:hover > .conten{
+    opacity: 1;
+}
+.outer-conten:hover > .sub-heading, .outer-conten:hover > .sub-numbering {
+    opacity: 0;
+}
+.outer-conten .sub-heading, .outer-conten .sub-numbering{
+    position: absolute;
+    text-align: center;
+    bottom: 10px;
+    background-color:rgba(194, 204, 192, 0.8);
+    border-radius: 10px;
+    left: 5px;
+    right: 5px;
+    color: #000;
+    letter-spacing: 3px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+}
+
+.outer-conten .sub-numbering{
+    top: 20px;
+    height: 44px;
+}
+
+.part3, .part4{
     margin-bottom: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-image: url("../../../assets/bgs/6056344.jpg");
+    background-image: url("../../../assets/bgs/mw0321.jpg");
     background-size: cover;
     padding: 20px;
-}
-.part3{
-    flex-direction: column;
-}
-.part1{
-    background-image: url("../../../assets/bgs/16056344.jpg");
-    background-size: cover;
-}
-.part4{
-    display: flex;
-    padding: 20px;
-    justify-content: space-between;
-    background-image: url("../../../assets/bgs/6056344.jpg");
-    background-size: cover;
 }
 
 .part5{
@@ -61,22 +92,14 @@
     justify-content: center;
     padding: 20px;
 }
-.part-content{
-    background-color: rgba(255, 255, 255, 0.7);
+.part-content, .book-session{
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 10px 10px #000;
     padding: 40px;
-    flex-basis: 50%;
     border-radius: 10px;
-    line-height: 30px;
 }
-.bgpart1 , .bgpart2, .bgpart4{
-    display: flex;
-    justify-content: end;
-    align-items: center;
-}
-.bgpart2, .bgpart4{
-    justify-content: start;
-}
-.part1 img , .part2 img,.part4 img, .part5 img{
+
+.part5 img{
     width: 400px;
 }
 .part3 div ul{
@@ -87,32 +110,25 @@
 }
 
 .book-btn{
+    background-color: #1e7e34;
+    max-width:230px;
     padding: 10px 20px;
     color: #fff;
     border-radius: 20px;
     outline: none;
     border: none;
-    background-color: rgb(59, 121, 90);
-    box-shadow:0 0px 3px rgb(59, 121, 90),0 0px 3px rgb(59, 121, 90), 0 0px 3px rgb(59, 121, 90),0 0px 3px rgb(59, 121, 90);
     transition: all 100ms ease-in-out;
 }
 .book-btn:hover{
-    box-shadow:0 0px 5px rgb(59, 121, 90),0 0px 5px rgb(59, 121, 90), 0 0px 5px rgb(59, 121, 90),0 0px 5px rgb(59, 121, 90);
+    background-color: #28a745;
 }
 
 @media (max-width:991px){
-    .myStory > h1:first-child{
-        font-size: 40px;
-    }
-    .section-aboutMe .intro h1, .thought-area h1{
-        font-size: 24px;
-    }
+
     .part1 img , .part2 img, .part4 img, .part5 img{
         width: 300px;
     }
-    .section-aboutMe{
-        padding: 30px;
-    }
+   
     .part-content{
         line-height: 26px;
     }
@@ -129,9 +145,11 @@
         align-items: center;
         flex-direction: column;
     }
+    
     .part4{
         align-items: center;
     }
+
     .bgpart1, .bgpart2, .bgpart4{
         margin-bottom: 20px;
         justify-content: center;
@@ -150,5 +168,22 @@
     .part5 div{
         display: flex;
         justify-content: center;
+    }
+    .outer-conten{
+        height: 520px;
+    }
+    .section-aboutMe{
+        padding: 20px;
+    }
+    .section-aboutMe .intro {
+        margin: -20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width:667px){
+    .outer-conten{
+        width: 280px;
+        height: 430px;
     }
 }

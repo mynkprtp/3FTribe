@@ -1,8 +1,7 @@
 <section class="section-contact">
   <div class="start-msg">
-    <q>Remember, everyone starts from somewhere and this place could be your
-    start to a whole different life full of health and vitality!</q> 
-    <div class="mt-2"><b>Cease this opportunity</b> </div>
+    <h1><q>Remember, everyone starts from somewhere and this place could be your
+    start to a whole different life full of health and vitality!</q></h1> 
   </div>
   <div class="contact-container">
     <div class="row">
@@ -13,11 +12,11 @@
           this form :</p>
           <p>OR</p>
           <p>Book your 35 min free DISCOVERY CALL to discuss your health goals with me</p>
-          <a href="https://calendly.com/itsmayankhere24/30min"><button class="btn btn-primary book-btn">Book Now for FREE</button></a>
+          <a href="https://calendly.com/3ftribewithcoachaseema/30min"><button class="btn btn-primary book-btn">Book Now for FREE</button></a>
         </div>
       </div>
       <div class="col-md-6 contact-form">
-        <form #contactForm="ngForm" (ngSubmit)="submit(contactForm)">
+        <form #contactForm="ngForm" (ngSubmit)="sendEmail(contactForm)">
           <div class="form-group">
             <label for="fname">First Name</label>
             <input
@@ -63,7 +62,22 @@
               Email Address Required
             </div>
           </div>
-  
+          <div class="form-group">
+            <label for="country">Country of Residence</label>
+            <input
+              #country="ngModel"
+              class="form-control"
+              required
+              ngModel
+              type="text"
+              name="country"
+              placeholder="Country"
+              ng
+            />
+            <div *ngIf="country.touched && country.invalid" class="alert alert-danger">
+              Country of Residence Required !!!
+            </div>
+          </div>
           <div class="form-group">
             <label for="subject">Subject</label>
             <input
@@ -89,7 +103,7 @@
               ngModel
               name="tellMore"
               cols="30"
-              rows="5"
+              rows="3"
             ></textarea>
           </div>
           <div class="form-group">
@@ -118,12 +132,33 @@
           </div>
           <button
             type="submit"
-            class="btn btn-primary"
+            value="send"
+            class="btn btn-primary submit-btn"
             [disabled]="!contactForm.valid"
           >
-            submit
+            Submit
           </button>
         </form>
+        
+        <!-- <form class="contact-form" (submit)="sendEmail($event);">
+          <label>Country</label>
+          <input type="text" name="f_name">
+          <label>Last Name</label>
+          <input type="text" name="l_name">
+          <label>Email</label>
+          <input type="email" name="user_email">
+          <label>Subject</label>
+          <input type="text" name="subject">
+          <label>Tell More</label>
+          <textarea name="tellMore"></textarea>
+          <select name="category" id="">
+            <option value="WILDFIT 90 day Challenge">WILDFIT 90 day Challenge</option>
+            <option value="1:1 Premium Coaching">1:1 Premium Coaching</option>
+            <option value="Living WILDFIT">Living WILDFIT</option>
+            <option value="I dont know yet !!!">I dont know yet !!!</option>
+          </select>
+          <input type="submit" value="Send">
+        </form> -->
       </div>
     </div>
   </div>

@@ -28,7 +28,7 @@ export class ShopComponent implements OnInit {
   }
   
   openLg(content:any) {
-    this.modalService.open(content, {size:'xl'});
+    this.modalService.open(content, {size:'lg'});
   }
   
 
